@@ -9,6 +9,9 @@ import Contact from './components/Contact';
 
 import './css/style.css';
 
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
+
 render((
   <Router history={browserHistory}>
     <Route path='/' component={Home} />
