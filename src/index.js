@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
-import Home from './components/Home';
+import Layout from './components/Layout';
 import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -14,7 +14,7 @@ injectTapEventPlugin();
 
 render((
   <Router history={browserHistory}>
-    <Route path='/' component={Home} />
+    <Route path='/' component={Layout} />
     <Route path='/portfolio' component={Portfolio} />
     <Route path='/about' component={About} />
     <Route path='/contact' component={Contact} />

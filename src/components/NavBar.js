@@ -1,31 +1,69 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router'
+import React from 'react';
+import {Tabs, Tab} from 'material-ui/Tabs';
+// From https://github.com/oliviertassinari/react-swipeable-views
+import SwipeableViews from 'react-swipeable-views';
 
-export default class Navbar extends Component {
+const styles = {
+  headline: {
+    fontSize: 24,
+    paddingTop: 16,
+    marginBottom: 12,
+    fontWeight: 400,
+  },
+  slide: {
+    padding: 10,
+  },
+};
+
+export default class TabsExampleSwipeable extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      slideIndex: 0,
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange (value) {
+    this.setState({
+      slideIndex: value,
+    });
+  };
+
   render() {
     return (
-      <nav className="navbar navbar-inverse navbar-static-top">
-        <div className="container-fluid">
-          <div className="navbar-header">
-            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span className="sr-only">Toggle navigation</span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-            </button>
-            <Link className="navbar-brand" to='/'>DANNY LIM</Link>
+      <div>
+        <Tabs
+          onChange={this.handleChange}
+          value={this.state.slideIndex}
+        >
+          <Tab label="About Me" value={0} />
+          <Tab label="Portfolio" value={1} />
+          <Tab label="Blog" value={2} />
+          <Tab label="Connect" value={3} />
+        </Tabs>
+        <SwipeableViews
+          index={this.state.slideIndex}
+          onChangeIndex={this.handleChange}
+        >
+          <div>
+            <h2 style={styles.headline}>Tabs with slide effect</h2>
+            Swipe to see the next slide.<br />
           </div>
-          <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <p className="navbar-text">FULLSTACK JAVASCRIPT DEVELOPER</p>
-            <ul className="nav navbar-nav navbar-right">
-              <li><Link to='/'>PORTFOLIO</Link></li>
-              <li><Link to='/'>RESUME</Link></li>
-              <li><Link to='/about'>BLOG</Link></li>
-              <li><Link to='/contact'>CONTACT</Link></li>
-            </ul>
+          <div style={styles.slide}>
+            slide n°2
           </div>
-        </div>
-      </nav>
-    )
+          <div style={styles.slide}>
+            slide n°3
+          </div>
+          <div style={styles.slide}>
+            slide n°4
+          </div>
+        </SwipeableViews>
+      </div>
+    );
   }
 }
