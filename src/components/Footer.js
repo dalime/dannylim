@@ -9,7 +9,7 @@ const style = {
 };
 
 const FlatButtonExampleIcon = () => (
-  <div>
+  <div id='connect'>
     <FlatButton
       icon={<ActionAndroid />}
       style={style}

@@ -1,7 +1,5 @@
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
-// From https://github.com/oliviertassinari/react-swipeable-views
-import SwipeableViews from 'react-swipeable-views';
 
 const styles = {
   headline: {
@@ -15,7 +13,7 @@ const styles = {
   },
 };
 
-export default class TabsExampleSwipeable extends React.Component {
+export default class NavBar extends React.Component {
 
   constructor(props) {
     super(props);
@@ -39,30 +37,13 @@ export default class TabsExampleSwipeable extends React.Component {
         <Tabs
           onChange={this.handleChange}
           value={this.state.slideIndex}
+          role='navigation'
         >
-          <Tab label='ABOUT ME' value={0} href='#aboutMe'/>
-          <Tab label='PORTFOLIO' value={1} href='#portfolio'/>
-          <Tab label='BLOG' value={2} href='#blog'/>
-          <Tab label='CONNECT' value={3} href='#connect'/>
+          <Tab label='ABOUT ME' value={0} href='#aboutMe' role='tab'/>
+          <Tab label='PORTFOLIO' value={1} href='#portfolio' role='tab'/>
+          <Tab label='BLOG' value={2} href='#blog' role='tab'/>
+          <Tab label='CONNECT' value={3} href='#connect' role='tab'/>
         </Tabs>
-        {/* <SwipeableViews
-          index={this.state.slideIndex}
-          onChangeIndex={this.handleChange}
-        >
-          <div>
-            <h2 style={styles.headline}>Tabs with slide effect</h2>
-            Swipe to see the next slide.<br />
-          </div>
-          <div style={styles.slide}>
-            slide n°2
-          </div>
-          <div style={styles.slide}>
-            slide n°3
-          </div>
-          <div style={styles.slide}>
-            slide n°4
-          </div>
-        </SwipeableViews> */}
       </div>
     );
   }
