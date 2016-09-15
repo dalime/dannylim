@@ -40,12 +40,12 @@ export default class TabsExampleSwipeable extends React.Component {
           onChange={this.handleChange}
           value={this.state.slideIndex}
         >
-          <Tab label="About Me" value={0} />
-          <Tab label="Portfolio" value={1} />
-          <Tab label="Blog" value={2} />
-          <Tab label="Connect" value={3} />
+          <Tab label='ABOUT ME' value={0} href='#aboutMe'/>
+          <Tab label='PORTFOLIO' value={1} href='#portfolio'/>
+          <Tab label='BLOG' value={2} href='#blog'/>
+          <Tab label='CONNECT' value={3} href='#connect'/>
         </Tabs>
-        <SwipeableViews
+        {/* <SwipeableViews
           index={this.state.slideIndex}
           onChangeIndex={this.handleChange}
         >
@@ -62,7 +62,7 @@ export default class TabsExampleSwipeable extends React.Component {
           <div style={styles.slide}>
             slide n°4
           </div>
-        </SwipeableViews>
+        </SwipeableViews> */}
       </div>
     );
   }
