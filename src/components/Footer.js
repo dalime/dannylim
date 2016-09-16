@@ -18,13 +18,13 @@ const FlatButtonExampleIcon = () => (
       href="https://github.com/dalime"
       target="_blank"
       secondary={true}
-      icon={<FontIcon className="muidocs-icon-custom-github" />}
+      icon={<FontIcon className="muidocs-icon-github" />}
       style={style}
     />
     <FlatButton
       backgroundColor="#a4c639"
       hoverColor="#8AA62F"
-      icon={<FontIcon className="muidocs-icon-custom-twitter" />}
+      icon={<FontIcon className="muidocs-icon-twitter" />}
       style={style}
     />
   </div>
