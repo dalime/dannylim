@@ -11,9 +11,11 @@ import path from 'path';
 export default class Jumbotron extends Component {
   render() {
     return (
-      <div className="jumbotron">
+      <div className="jumbotron text-center">
         {/* <h1 className="text-center" style={styles.name}>Danny Lim</h1> */}
-        <h1 className="text-center">Danny Lim</h1>
+        <h1>Danny Lim</h1>
+        <h4>Fullstack JavaScript Developer</h4>
+        <img src="images/background.png" />
       </div>
     )
   }
