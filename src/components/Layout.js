@@ -4,7 +4,7 @@ import Scrollspy from 'react-scrollspy';
 import NavBar from './NavBar';
 import ContactInput from './ContactInput';
 import Footer from './Footer';
-import Jumbotron from './Jumobotron';
+import Jumbotron from './Jumbotron';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
