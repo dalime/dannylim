@@ -10,7 +10,7 @@ const style = {
 };
 
 const Footer = () => (
-  <div id='connect'>
+  <div id='connect' className='text-center'>
     <FlatButton
       icon={<ActionAndroid />}
       style={style}

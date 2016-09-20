@@ -39,7 +39,7 @@ export default class NavBar extends React.Component {
           value={this.state.slideIndex}
           role='navigation'
         >
-          <Tab label='ABOUT ME' value={0} href='#aboutMe' role='tab'/>
+          <Tab label='ABOUT' value={0} href='#about' role='tab'/>
           <Tab label='PORTFOLIO' value={1} href='#portfolio' role='tab'/>
           <Tab label='BLOG' value={2} href='#blog' role='tab'/>
           <Tab label='CONNECT' value={3} href='#connect' role='tab'/>

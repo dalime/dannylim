@@ -5,7 +5,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import Layout from './components/Layout';
 import Portfolio from './components/Portfolio';
 import About from './components/About';
-import Contact from './components/Contact';
+import Connect from './components/Connect';
 
 import './css/style.css';
 
@@ -17,7 +17,7 @@ render((
     <Route path='/' component={Layout} />
     <Route path='/portfolio' component={Portfolio} />
     <Route path='/about' component={About} />
-    <Route path='/contact' component={Contact} />
+    <Route path='/connect' component={Connect} />
   </Router>
 ),  document.getElementById('root')
 );

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class App extends Component {
   render() {
     return (
-      <h1 className="text-center">About</h1>
+      <h1 className="text-center" id='about'>About</h1>
     )
   }
 }
