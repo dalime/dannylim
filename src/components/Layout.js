@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 
 import NavBar from './NavBar';
-import Avatar from './Avatar';
 import ContactInput from './ContactInput';
 import Footer from './Footer';
+import Jumbotron from './Jumobotron';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
@@ -19,9 +19,8 @@ export default class Layout extends Component {
     return (
       <MuiThemeProvider>
         <div>
-          <Avatar />
           <NavBar />
-          <h1 className="text-center">DANNY LIM</h1>
+          <Jumbotron />
           <div className="scroll-box">
 
             {/* <ul className="nav nav-tabs tabs-3 red horizontal-spy" id="navbar-example2" role="navigation">
