@@ -1,51 +1,52 @@
-import React from 'react';
+import React, { Component } from 'react';
 import TextField from 'material-ui/TextField';
+import RaisedButton from 'material-ui/RaisedButton';
 
-const Connect = () => (
-  // <div>
-  //   <TextField
-  //     hintText="Hint Text"
-  //   /><br />
-  //   <br />
-  //   <TextField
-  //     hintText="The hint text can be as long as you want, it will wrap."
-  //   /><br />
-  //   <TextField
-  //     id="text-field-default"
-  //     defaultValue="Default Value"
-  //   /><br />
-  //   <TextField
-  //     hintText="Hint Text"
-  //     floatingLabelText="Floating Label Text"
-  //   /><br />
-  //   <TextField
-  //     hintText="Hint Text"
-  //     floatingLabelText="Fixed Floating Label Text"
-  //     floatingLabelFixed={true}
-  //   /><br />
-  //   <TextField
-  //     hintText="Password Field"
-  //     floatingLabelText="Password"
-  //     type="password"
-  //   /><br />
-  //   <TextField
-  //     hintText="MultiLine with rows: 2 and rowsMax: 4"
-  //     multiLine={true}
-  //     rows={2}
-  //     rowsMax={4}
-  //   /><br />
-  //   <TextField
-  //     hintText="Message Field"
-  //     floatingLabelText="MultiLine and FloatingLabel"
-  //     multiLine={true}
-  //     rows={2}
-  //   /><br />
-  //   <TextField
-  //     hintText="Full width"
-  //     fullWidth={true}
-  //   />
-  // </div>
-  <div></div>
-);
+const styles = {
+  connectBox: {
+    'backgroundColor': 'lightgray',
+    'padding': '20px'
+  }
+}
 
-export default Connect;
+export default class Connect extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      messageText: ''
+    }
+
+    this.onInputChange = this.onInputChange.bind(this);
+    this.submit = this.submit.bind(this);
+  }
+
+  onInputChange(e) {
+    this.setState({messageText: e.target.value});
+  }
+
+  submit(e) {
+    // ADD LOGIC TO SEND EMAIL TO ME
+    e.preventDefault();
+  }
+
+  render() {
+    return (
+      <div className="text-center container" style={styles.connectBox}>
+        <form onSubmit={this.submit}>
+          <h4>CONNECT</h4>
+          <TextField
+          hintText="Feel free to message me."
+          floatingLabelText="Message"
+          onChange={this.onInputChange}
+          /><br />
+          <RaisedButton
+          label="Send"
+          secondary={true}
+          type='submit'
+          />
+        </form>
+      </div>
+    )
+  }
+}
