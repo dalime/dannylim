@@ -2,24 +2,19 @@ import React, { Component } from 'react';
 
 import path from 'path';
 
-// const styles = {
-//   name: {
-//     'fontFamily': 'Roboto, sans-serif'
-//   }
-// }
+const styles = {
+  background: {
+    'backgroundImage': 'url(http://i.imgur.com/SGyYvTC.jpg)',
+    'height': '1000px'
+  }
+}
 
 export default class Jumbotron extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
-      <div className="jumbotron text-center">
-        {/* <h1 className="text-center" style={styles.name}>Danny Lim</h1> */}
+      <div className="jumbotron text-center" style={styles.background}>
         <h1>Danny Lim</h1>
         <h4>Fullstack JavaScript Developer</h4>
-        <img src="images/egg.jpg" width='100px'/>
       </div>
     )
   }
