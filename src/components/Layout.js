@@ -17,9 +17,13 @@ export default class Layout extends Component {
           <NavBar />
           <Jumbotron />
           <About />
+          <hr />
           <Portfolio />
+          <hr />
           <Blog />
+          <hr />
           <Connect />
+          <hr />
           <Footer />
         </div>
       </MuiThemeProvider>

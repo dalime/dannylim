@@ -4,7 +4,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 const styles = {
   connectBox: {
-    'backgroundColor': 'lightgray',
+    'backgroundColor': 'lightblue',
     'padding': '20px'
   }
 }
@@ -34,7 +34,7 @@ export default class Connect extends Component {
     return (
       <div className="text-center container" style={styles.connectBox}>
         <form onSubmit={this.submit}>
-          <h4>CONNECT</h4>
+          <h2>CONNECT</h2>
           <TextField
           hintText="Feel free to message me."
           floatingLabelText="Message"
