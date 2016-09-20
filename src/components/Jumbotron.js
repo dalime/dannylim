@@ -11,8 +11,7 @@ const styles = {
     'backgroundSize': '100%',
     'color': 'white',
     'display': 'flex',
-    'alignItems': 'center',
-    'fontFamily': 'Roboto'
+    'alignItems': 'center'
   }
 }
 
@@ -21,6 +20,7 @@ export default class Jumbotron extends Component {
     return (
       <div className="jumbotron text-center" style={styles.background}>
         <h1>DANNY LIM</h1>
+        <br/>
         <h4>Fullstack JavaScript Developer</h4>
       </div>
     )

@@ -9,6 +9,8 @@ const style = {
 };
 
 const Footer = () => (
+  // NEED LINKEDIN, WORDPRESS, GITHUB SVG ICONS
+  
   <div id='connect' className='text-center'>
     <FlatButton
       icon={<ActionAndroid />}

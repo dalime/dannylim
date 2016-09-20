@@ -8,6 +8,10 @@ const path = 'http://github.com/dalime/'
 const styles = {
   avatars: {
     'pointer': 'cursor'
+  },
+  links: {
+    'textDecoration': 'none',
+    'color': 'black'
   }
 }
 
@@ -48,15 +52,33 @@ export default class Projects extends Component {
           <div className="row">
             <div className="col-sm-12 col-md-4 col-lg-4">
               <Avatar size={100} onClick={this.herokuNav} />
-              <a href='#' target='_blank' onClick={this.toGithub}><h3>Project 1</h3></a>
+              <a
+                href='#'
+                target='_blank'
+                onClick={this.toGithub}
+                style={styles.links}
+              >
+              <h3>Project 1</h3></a>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-4">
               <Avatar size={100} onClick={this.herokuNav} />
-              <a href='#' target='_blank' onClick={this.toGithub}><h3>NewsRant</h3></a>
+              <a
+                href='#'
+                target='_blank'
+                onClick={this.toGithub}
+                style={styles.links}
+              >
+              <h3>NewsRant</h3></a>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-4">
               <Avatar size={100} onClick={this.herokuNav} />
-              <a href='#' target='_blank' onClick={this.toGithub}><h3>Project 3</h3></a>
+              <a
+                href='#'
+                target='_blank'
+                onClick={this.toGithub}
+                style={styles.links}
+              >
+              <h3>Project 3</h3></a>
             </div>
           </div>
         </div>
