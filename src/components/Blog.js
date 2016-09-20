@@ -31,7 +31,7 @@ export default class Blog extends Component {
         <p>See below for my latest blog post.</p>
         <iframe
           src="http://www.wordpress.com/dalime"
-          frameborder="0"
+          frameBorder="0"
           style={styles.iframe}
         >
         </iframe>

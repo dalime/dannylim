@@ -12,7 +12,7 @@ export default class App extends Component {
           </div>
           <div className="row">
             <div className="col-sm-12 col-md-4 col-lg-3">
-              <Avatar size='200px'/>
+              <Avatar size={200}/>
             </div>
             <div className='col-sm-12 col-md-8 col-lg-9'>
               <h3>Summary</h3>
@@ -37,7 +37,7 @@ export default class App extends Component {
               <h5>Bachelor of Science in Information Systems and Accounting</h5>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
-              <Avatar size='75px'/>
+              <Avatar size={75}/>
             </div>
           </div>
           <div className="row">
@@ -46,7 +46,7 @@ export default class App extends Component {
               <h5>Self taught JavaScript development</h5>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
-              <Avatar size='75px' />
+              <Avatar size={75} />
             </div>
           </div>
           <div className="row">
@@ -58,7 +58,7 @@ export default class App extends Component {
               <h5>Software Development Intern</h5>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
-              <Avatar size='75px' />
+              <Avatar size={75} />
             </div>
           </div>
           <div className="row">
@@ -67,7 +67,7 @@ export default class App extends Component {
               <h5>Advisory Consultant</h5>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
-              <Avatar size='75px' />
+              <Avatar size={75} />
             </div>
           </div>
         </div>

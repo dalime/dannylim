@@ -40,7 +40,7 @@ export default class NavBar extends React.Component {
           role='navigation'
         >
           <Tab label='ABOUT' value={0} href='#about' role='tab'/>
-          <Tab label='PORTFOLIO' value={1} href='#portfolio' role='tab'/>
+          <Tab label='PORTFOLIO' value={1} href='#projects' role='tab'/>
           <Tab label='BLOG' value={2} href='#blog' role='tab'/>
           <Tab label='CONNECT' value={3} href='#connect' role='tab'/>
         </Tabs>
