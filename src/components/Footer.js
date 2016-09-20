@@ -2,7 +2,6 @@ import React from 'react';
 import FlatButton from 'material-ui/FlatButton';
 import FontIcon from 'material-ui/FontIcon';
 import ActionAndroid from 'material-ui/svg-icons/action/android';
-//import ActionTwitter from 'material-ui/svg-icons/action/twitter';
 import {fullWhite} from 'material-ui/styles/colors';
 
 const style = {

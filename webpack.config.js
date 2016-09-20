@@ -7,7 +7,7 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: path.join(__dirname, '/public'),
+    path: path.join(__dirname, 'public'),
     publicPath: '/',
     filename: 'bundle.js'
   },
@@ -31,7 +31,7 @@ module.exports = {
       {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream'},
       {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'},
       {test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/, loader: 'imports?jQuery=jquery'},
-      {test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/, loader: 'file'}
+      { test:/\.json$/, loader: 'json-loader'}
     ]
   }
 }
