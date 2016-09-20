@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 export default class Portfolio extends Component {
   render() {
     return (
-      <h1 className="text-center" id='portfolio'>Portfolio</h1>
+      <div id="portfolio" className="text-center">
+        <h1>Portfolio</h1>
+        <p>Please see below for my portfolio.</p>
+      </div>
     )
   }
 }

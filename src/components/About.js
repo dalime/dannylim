@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 export default class App extends Component {
   render() {
     return (
-      <h1 className="text-center" id='about'>About</h1>
+      <div id='about' className='text-center'>
+        <h1>About</h1>
+        <p>Hi, my name is Danny Lim and I am a Fullstack JavaScript Developer.</p>
+      </div>
     )
   }
 }
