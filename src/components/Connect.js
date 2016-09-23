@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import FlatButton from 'material-ui/FlatButton';
+import FontIcon from 'material-ui/FontIcon';
+import ActionAndroid from 'material-ui/svg-icons/action/android';
+import {fullWhite} from 'material-ui/styles/colors';
 
 const styles = {
   connectBox: {
-    'backgroundColor': 'lightblue',
+    'backgroundColor': '#e9f0ff',
     'padding': '20px'
+  },
+  button: {
+    margin: 12
   }
 }
 
@@ -32,7 +39,7 @@ export default class Connect extends Component {
 
   render() {
     return (
-      <div className="text-center container" style={styles.connectBox}>
+      <div className="text-center container" style={styles.connectBox} id='connect'>
         <form onSubmit={this.submit}>
           <h2>CONNECT</h2>
           <TextField
@@ -46,6 +53,25 @@ export default class Connect extends Component {
           type='submit'
           />
         </form>
+        <br />
+        <br />
+        <FlatButton
+          icon={<ActionAndroid />}
+          style={styles.button}
+        />
+        <FlatButton
+          href="https://github.com/dalime"
+          target="_blank"
+          secondary={true}
+          icon={<ActionAndroid />}
+          style={styles.button}
+        />
+        <FlatButton
+          backgroundColor="#a4c639"
+          hoverColor="#8AA62F"
+          icon={<FontIcon className="muidocs-icon-android" />}
+          style={styles.button}
+        />
       </div>
     )
   }

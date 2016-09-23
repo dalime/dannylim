@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 import NavBar from './NavBar';
 import Connect from './Connect';
-import Footer from './Footer';
 import Jumbotron from './Jumbotron';
 import About from './About';
 import Projects from './Projects';
@@ -23,8 +22,6 @@ export default class Layout extends Component {
           <Blog />
           <hr />
           <Connect />
-          <hr />
-          <Footer />
         </div>
       </MuiThemeProvider>
     )

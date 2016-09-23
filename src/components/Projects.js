@@ -12,6 +12,9 @@ const styles = {
   links: {
     'textDecoration': 'none',
     'color': 'black'
+  },
+  background: {
+    'backgroundColor': '#e9f0ff'
   }
 }
 
@@ -44,7 +47,7 @@ export default class Projects extends Component {
 
   render() {
     return (
-      <div id="projects" className="text-center container">
+      <div id="projects" className="container text-center" style={styles.background}>
         <div className="col-sm-12 col-md-12 col-lg-12">
           <div className="row">
             <h2>PROJECTS</h2>

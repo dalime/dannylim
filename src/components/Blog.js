@@ -28,19 +28,13 @@ export default class Blog extends Component {
     return (
       <div id="blog" className="text-center container" style={styles.blog}>
         <h2>BLOG</h2>
-        <p>I'm on wordpress. My latest post.</p>
+        <p>I like to share my thoughts on <a href='https://dalime5.wordpress.com/'>wordpress</a>. Here's my latest <a href='https://dalime5.wordpress.com/2016/08/29/firebase-and-react/'>post.</a></p>
         <iframe
           src="https://dalime5.wordpress.com/2016/08/29/firebase-and-react/"
           frameBorder="0"
           style={styles.iframe}
         >
         </iframe>
-        <br />
-        <RaisedButton
-          onClick={this.navigate}
-          label='BLOG'
-          primary={true}
-        />
       </div>
     )
   }
