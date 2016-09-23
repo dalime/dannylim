@@ -18,10 +18,15 @@ const styles = {
 export default class Jumbotron extends Component {
   render() {
     return (
-      <div className="jumbotron text-center" style={styles.background}>
-        <h1>DANNY LIM</h1>
-        <br/>
-        <h4>Fullstack JavaScript Developer</h4>
+      <div className="jumbotron" style={styles.background}>
+        <div className="container" style={styles.name}>
+          <div className="row">
+            <h1>DANNY LIM</h1>
+          </div>
+          <div className="row">
+            <h4>Fullstack JavaScript Developer</h4>
+          </div>
+        </div>
       </div>
     )
   }

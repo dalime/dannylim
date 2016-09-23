@@ -9,7 +9,7 @@ const styles = {
   },
   iframe: {
     'width': '50%',
-    'minHeight': '200px'
+    'minHeight': '400px'
   }
 }
 
@@ -28,9 +28,9 @@ export default class Blog extends Component {
     return (
       <div id="blog" className="text-center container" style={styles.blog}>
         <h2>BLOG</h2>
-        <p>See below for my latest blog post.</p>
+        <p>I'm on wordpress. My latest post.</p>
         <iframe
-          src="http://www.wordpress.com/dalime"
+          src="https://dalime5.wordpress.com/2016/08/29/firebase-and-react/"
           frameBorder="0"
           style={styles.iframe}
         >
