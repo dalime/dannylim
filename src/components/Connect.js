@@ -31,31 +31,25 @@ export default class Connect extends Component {
     }
 
     this.onInputChange = this.onInputChange.bind(this);
-    this.submit = this.submit.bind(this);
   }
 
   onInputChange(e) {
     this.setState({messageText: e.target.value});
   }
 
-  submit(e) {
-    // ADD LOGIC TO SEND EMAIL TO ME
-    e.preventDefault();
-  }
-
   render() {
     return (
       <div className="text-center container" style={styles.connectBox} id='connect'>
-        <form onSubmit={this.submit}>
+        <form method='post' action='mailto:danny.b.lim@gmail.com'>
           <h2>CONNECT</h2>
-          <TextField
+          {/* <TextField
           hintText="Feel free to message me."
           floatingLabelText="Message"
           onChange={this.onInputChange}
-          /><br />
+          /><br /> */}
           <RaisedButton
-          label="Send"
-          secondary={true}
+          label="Email"
+          primary={true}
           type='submit'
           />
         </form>

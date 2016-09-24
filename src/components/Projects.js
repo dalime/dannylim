@@ -19,69 +19,43 @@ const styles = {
 }
 
 export default class Projects extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      repo: ''
-    }
-
-    this.toGithub = this.toGithub.bind(this);
-    this.navigate = this.navigate.bind(this);
-    this.herokuNav = this.herokuNav.bind(this);
-  }
-
-  toGithub(e) {
-    this.setState({repo: e.target.innerHTML})
-    this.navigate(this.state.repo);
-  }
-
-  navigate(repo) {
-    //browserHistory.push(`http://github.com/dalime/${repo}`)
-    // OPEN NEW TAB TO REPO
-  }
-
-  herokuNav(e) {
-    // OPEN NEW TAB TO HEROKU DEPLOYED APP
-  }
-
   render() {
     return (
       <div id="projects" className="container text-center" style={styles.background}>
-        <div className="col-sm-12 col-md-12 col-lg-12">
+        <div className="col-sm-12 col-md-12 col-lg-12 text-center">
           <div className="row">
             <h2>PROJECTS</h2>
           </div>
           <div className="row">
             <div className="col-sm-12 col-md-4 col-lg-4">
-              <Avatar size={100} onClick={this.herokuNav} />
+              <a href='http://newsrant.herokuapp.com/' target='_blank'><Avatar size={100} src='http://i.imgur.com/72ivRyL.png'/></a>
               <a
-                href='#'
-                target='_blank'
-                onClick={this.toGithub}
-                style={styles.links}
-              >
-              <h3>Project 1</h3></a>
-            </div>
-            <div className="col-sm-12 col-md-4 col-lg-4">
-              <a href='https://newsrant.herokuapp.com/' target='_blank'><Avatar size={100} src='http://i.imgur.com/72ivRyL.png'/></a>
-              <a
-                href='https://github.com/dalime/NewsRant'
-                target='_blank'
-                onClick={this.toGithub}
-                style={styles.links}
+              href='https://github.com/dalime/NewsRant'
+              target='_blank'
+              style={styles.links}
               >
               <h3>NewsRant</h3></a>
+              <p>A simple app where you can search for news articles, open chatrooms, and chat about them anonymously.</p>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-4">
-              <Avatar size={100} onClick={this.herokuNav} />
+              <Avatar size={100}/>
               <a
                 href='#'
                 target='_blank'
-                onClick={this.toGithub}
+                style={styles.links}
+              >
+              <h3>Project 2</h3></a>
+              <p>Coming soon</p>
+            </div>
+            <div className="col-sm-12 col-md-4 col-lg-4">
+              <Avatar size={100}/>
+              <a
+                href='#'
+                target='_blank'
                 style={styles.links}
               >
               <h3>Project 3</h3></a>
+              <p>Coming soon</p>
             </div>
           </div>
         </div>

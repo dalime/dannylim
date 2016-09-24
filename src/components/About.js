@@ -83,6 +83,19 @@ export default class App extends Component {
           </div>
           <div className="row">
             <div className="col-sm-6 col-md-4 col-lg-3 text-right">
+              <Avatar size={75} src='http://i.imgur.com/1GAgpjG.png'/>
+            </div>
+            <div className="col-sm-6 col-md-8 col-lg-9">
+              <h4 style={styles.companyTitle}>Free Code Camp</h4>
+              <h5 style={styles.positionName}>Self taught JavaScript development (May 2016 - Current)</h5>
+              <p>After my internship with a2z, I decided to dedicate more time to better my development skillset.
+              I found Free Code Camp, which was the perfect solution for me.
+              Since then, JavaScript has been my choice language and I've been developing particularly with React.js and Redux.js.</p>
+            </div>
+          </div>
+          <br />
+          <div className="row">
+            <div className="col-sm-6 col-md-4 col-lg-3 text-right">
               <Avatar size={75} src='http://i.imgur.com/ErkLYCZ.png'/>
             </div>
             <div className="col-sm-6 col-md-8 col-lg-9">
@@ -93,19 +106,6 @@ export default class App extends Component {
               Interested in how companies manage data, I chose Information Systems as my primary major within the school.
               It was then that I was first exposed to programming, particularly in Visual Basic and SQL.
               </p>
-            </div>
-          </div>
-          <br />
-          <div className="row">
-            <div className="col-sm-6 col-md-4 col-lg-3 text-right">
-              <Avatar size={75} src='http://i.imgur.com/1GAgpjG.png'/>
-            </div>
-            <div className="col-sm-6 col-md-8 col-lg-9">
-              <h4 style={styles.companyTitle}>Free Code Camp</h4>
-              <h5 style={styles.positionName}>Self taught JavaScript development (May 2016 - Current)</h5>
-              <p>After my internship with a2z, I decided to dedicate more time to better my development skillset.
-              I found Free Code Camp, which was the perfect solution for me.
-              Since then, JavaScript has been my choice language and I've been developing particularly with React.js and Redux.js.</p>
             </div>
           </div>
         </div>
