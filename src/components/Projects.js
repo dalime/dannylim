@@ -64,9 +64,9 @@ export default class Projects extends Component {
               <h3>Project 1</h3></a>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-4">
-              <a href='https://newsrant.herokuapp.com/' target='_blank'><Avatar size={100} onClick={this.herokuNav} /></a>
+              <a href='https://newsrant.herokuapp.com/' target='_blank'><Avatar size={100} src='http://i.imgur.com/72ivRyL.png'/></a>
               <a
-                href='#'
+                href='https://github.com/dalime/NewsRant'
                 target='_blank'
                 onClick={this.toGithub}
                 style={styles.links}
