@@ -87,7 +87,7 @@ export default class App extends Component {
             </div>
             <div className="col-sm-6 col-md-8 col-lg-9">
               <h4 style={styles.companyTitle}>Free Code Camp</h4>
-              <h5 style={styles.positionName}>Self taught JavaScript development (May 2016 - Current)</h5>
+              <h5 style={styles.positionName}>Fullstack JavaScript Development (May 2016 - Current)</h5>
               <p>After my internship with a2z, I decided to dedicate more time to better my development skillset.
               I found Free Code Camp, which was the perfect solution for me.
               Since then, JavaScript has been my choice language and I've been developing particularly with React.js and Redux.js.</p>
