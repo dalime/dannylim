@@ -55,6 +55,7 @@ export default class Connect extends Component {
         </form>
         <br />
         <br />
+        <img src='http://i.imgur.com/8ufDCb0.png' width='100px'/>
         <FlatButton
           icon={<ActionAndroid />}
           style={styles.button}
