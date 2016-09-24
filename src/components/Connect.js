@@ -12,7 +12,13 @@ const styles = {
     'padding': '20px'
   },
   button: {
-    margin: 12
+    'margin': 12,
+    'width': '50px'
+  },
+  linkedInButton: {
+    'margin': 12,
+    'width': '50px',
+    'borderRadius': '10px'
   }
 }
 
@@ -55,24 +61,10 @@ export default class Connect extends Component {
         </form>
         <br />
         <br />
-        <img src='http://i.imgur.com/8ufDCb0.png' width='100px'/>
-        <FlatButton
-          icon={<ActionAndroid />}
-          style={styles.button}
-        />
-        <FlatButton
-          href="https://github.com/dalime"
-          target="_blank"
-          secondary={true}
-          icon={<ActionAndroid />}
-          style={styles.button}
-        />
-        <FlatButton
-          backgroundColor="#a4c639"
-          hoverColor="#8AA62F"
-          icon={<FontIcon className="muidocs-icon-android" />}
-          style={styles.button}
-        />
+        <a href='https://github.com/dalime' target='_blank'><img src='http://i.imgur.com/4JMsggT.png' style={styles.button}/></a>
+        <a href='https://twitter.com/dalime5' target='_blank'><img src='http://i.imgur.com/IpIx4wc.png' width='60px' margin={12}/></a>
+        <a href='https://dalime5.wordpress.com/' target='_blank'><img src='http://i.imgur.com/pZKbnlQ.png' style={styles.button}/></a>
+        <a href='https://www.linkedin.com/in/danny-lim-a4839230' target='_blank'><img src='http://i.imgur.com/2a1dKIO.png' style={styles.linkedInButton}/></a>
       </div>
     )
   }
