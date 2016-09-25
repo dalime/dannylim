@@ -2,15 +2,21 @@ import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
 
 const styles = {
+  bar: {
+    'position': 'fixed',
+    'top': 0,
+    'width': '100%',
+    'zIndex': 100
+  },
   headline: {
-    fontSize: 24,
-    paddingTop: 16,
-    marginBottom: 12,
-    fontWeight: 400,
+    'fontSize': 24,
+    'paddingTop': 16,
+    'marginBottom': 12,
+    'fontWeight': 400,
   },
   slide: {
-    padding: 10,
-  },
+    'padding': 10,
+  }
 };
 
 export default class NavBar extends React.Component {
@@ -33,7 +39,7 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={styles.bar}>
         <Tabs
           onChange={this.handleChange}
           value={this.state.slideIndex}
