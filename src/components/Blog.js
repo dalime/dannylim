@@ -8,8 +8,8 @@ const styles = {
     'marginBottom': '30px'
   },
   iframe: {
-    'width': '50%',
-    'minHeight': '400px'
+    'width': '75%',
+    'minHeight': '600px'
   }
 }
 

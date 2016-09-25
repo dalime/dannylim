@@ -35,7 +35,7 @@ export default class Projects extends Component {
               style={styles.links}
               >
               <h3>NewsRant</h3></a>
-              <p>A simple app where you can search for news articles, open chatrooms, and chat about them anonymously.</p>
+              <p>A simple app where you can search for news articles, open chatrooms, and talk about them anonymously with other people interested in the same article.</p>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-4">
               <Avatar size={100}/>
