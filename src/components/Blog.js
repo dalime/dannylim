@@ -14,16 +14,6 @@ const styles = {
 }
 
 export default class Blog extends Component {
-  constructor(props) {
-    super(props);
-
-    this.navigate = this.navigate.bind(this);
-  }
-
-  navigate() {
-    console.log ('hello');
-  }
-
   render() {
     return (
       <div id="blog" className="text-center container" style={styles.blog}>

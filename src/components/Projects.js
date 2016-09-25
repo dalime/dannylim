@@ -3,8 +3,6 @@ import { browserHistory } from 'react-router';
 
 import Avatar from 'material-ui/Avatar';
 
-const path = 'http://github.com/dalime/'
-
 const styles = {
   avatars: {
     'pointer': 'cursor'

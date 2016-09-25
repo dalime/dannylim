@@ -23,30 +23,11 @@ const styles = {
 }
 
 export default class Connect extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      messageText: ''
-    }
-
-    this.onInputChange = this.onInputChange.bind(this);
-  }
-
-  onInputChange(e) {
-    this.setState({messageText: e.target.value});
-  }
-
   render() {
     return (
       <div className="text-center container" style={styles.connectBox} id='connect'>
         <form method='post' action='mailto:danny.b.lim@gmail.com'>
           <h2>CONNECT</h2>
-          {/* <TextField
-          hintText="Feel free to message me."
-          floatingLabelText="Message"
-          onChange={this.onInputChange}
-          /><br /> */}
           <RaisedButton
           label="Email"
           primary={true}
