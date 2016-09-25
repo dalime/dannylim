@@ -1,25 +1,23 @@
-const webpack = require('webpack');
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: [
     'bootstrap-loader',
-    './src/index'
+    './src/index.js'
   ],
   output: {
-    path: path.join(__dirname, 'public'),
-    publicPath: '/',
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
   },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    })
-  ],
   module: {
     loaders: [
+      {
+        test: /\.js$/,
+        loader: 'babel',
+        exclude: ['node_modules'],
+        query: {compact: false}
+      },
       {
         test: /\.jsx?$/,
         include: path.join(__dirname, 'src'),
@@ -33,5 +31,20 @@ module.exports = {
       {test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/, loader: 'imports?jQuery=jquery'},
       { test:/\.json$/, loader: 'json-loader'}
     ]
-  }
+  },
+  plugins: [
+      new webpack.DefinePlugin({
+        "process.env": {
+          NODE_ENV: JSON.stringify("production")
+        }
+      }),
+      new webpack.optimize.UglifyJsPlugin({
+        compress: {
+          warnings: false
+        }
+      }),
+      new webpack.ProvidePlugin({
+        "React": "react"
+      })
+    ]
 }

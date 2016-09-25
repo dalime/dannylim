@@ -7,8 +7,6 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Connect from './components/Connect';
 
-import './css/style.css';
-
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 

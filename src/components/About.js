@@ -11,7 +11,8 @@ const styles = {
   },
   skillLogo: {
     'width': '150px',
-    'margin': '5px'
+    'marginLeft': '5px',
+    'marginRight': '5px'
   }
 }
 
