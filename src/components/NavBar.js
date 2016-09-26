@@ -44,7 +44,6 @@ export default class NavBar extends React.Component {
           onChange={this.handleChange}
           value={this.state.slideIndex}
           role='navigation'
-          className='col-sm-12 col-md-12 col-lg-12'
         >
           <Tab label='ABOUT' value={0} href='#about' role='tab'/>
           <Tab label='PROJECTS' value={1} href='#projects' role='tab'/>

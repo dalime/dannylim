@@ -13,12 +13,12 @@ const styles = {
   },
   button: {
     'margin': 12,
-    'width': '50px'
+    'width': '10%'
   },
   linkedInButton: {
     'margin': 12,
-    'width': '50px',
-    'borderRadius': '10px'
+    'width': '10%',
+    'borderRadius': '20px'
   }
 }
 
@@ -27,7 +27,7 @@ export default class Connect extends Component {
     return (
       <div className="text-center container col-sm-12 col-md-12 col-lg-12" style={styles.connectBox} id='connect'>
         <form method='post' action='mailto:danny.b.lim@gmail.com'>
-          <h2 className='col-sm-12 col-md-12 col-lg-12'>CONNECT</h2>
+          <h2>CONNECT</h2>
           <RaisedButton
           label="Email"
           primary={true}
@@ -37,9 +37,9 @@ export default class Connect extends Component {
         <br />
         <br />
         <a href='https://github.com/dalime' target='_blank'><img src='http://i.imgur.com/4JMsggT.png' style={styles.button}/></a>
-        <a href='https://twitter.com/dalime5' target='_blank'><img src='http://i.imgur.com/IpIx4wc.png' width='60px' margin={12}/></a>
+        <a href='https://twitter.com/dalime5' target='_blank'><img src='http://i.imgur.com/IpIx4wc.png' style={styles.button}/></a>
         <a href='https://dalime5.wordpress.com/' target='_blank'><img src='http://i.imgur.com/pZKbnlQ.png' style={styles.button}/></a>
-        <a href='https://www.linkedin.com/in/danny-lim-a4839230' target='_blank'><img src='http://i.imgur.com/2a1dKIO.png' style={styles.linkedInButton}/></a>
+        <a href='https://www.linkedin.com/in/danny-lim-a4839230' target='_blank'><img src='http://i.imgur.com/0TSfZBT.png' style={styles.button}/></a>
       </div>
     )
   }

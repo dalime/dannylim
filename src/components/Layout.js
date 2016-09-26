@@ -12,7 +12,7 @@ export default class Layout extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <div className='col-sm-12 col-md-12 col-lg-12'>
+        <div>
           <NavBar />
           <Jumbotron />
           <About />

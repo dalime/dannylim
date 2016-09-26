@@ -26,7 +26,7 @@ export default class Projects extends Component {
           </div>
           <div className="row">
             <div className="col-sm-12 col-md-4 col-lg-4">
-              <a href='http://newsrant.herokuapp.com/' target='_blank'><Avatar size={100} src='http://i.imgur.com/72ivRyL.png'/></a>
+              <a href='http://newsrant.herokuapp.com/' target='_blank'><Avatar size='50%' src='http://i.imgur.com/ZTaZfd1.png'/></a>
               <a
               href='https://github.com/dalime/NewsRant'
               target='_blank'
@@ -36,7 +36,7 @@ export default class Projects extends Component {
               <p>A simple app where you can search for news articles, open chatrooms, and talk about them anonymously with other people interested in the same article.</p>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-4">
-              <Avatar size={100}/>
+              <Avatar size='50%'/>
               <a
                 href='#'
                 target='_blank'
@@ -46,7 +46,7 @@ export default class Projects extends Component {
               <p>Coming soon</p>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-4">
-              <Avatar size={100}/>
+              <Avatar size='50%'/>
               <a
                 href='#'
                 target='_blank'

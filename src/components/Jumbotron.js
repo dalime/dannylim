@@ -24,14 +24,12 @@ export default class Jumbotron extends Component {
   render() {
     return (
       <div className="jumbotron col-sm-12 col-md-12 col-lg-12" style={styles.background}>
-        <div className="container">
-          <div className="col-sm-12 col-md-4 col-lg-4 text-center" style={styles.name}>
-            <div className="row">
-              <h1>DANNY LIM</h1>
-            </div>
-            <div className="row">
-              <h4>Fullstack JavaScript Developer</h4>
-            </div>
+        <div className="text-center" style={styles.name}>
+          <div className="row">
+            <h1>DANNY LIM</h1>
+          </div>
+          <div className="row">
+            <h4>Fullstack JavaScript Developer</h4>
           </div>
         </div>
       </div>
