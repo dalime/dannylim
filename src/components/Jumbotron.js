@@ -6,9 +6,8 @@ const styles = {
   background: {
     'position': 'relative',
     'background': 'url(http://i.imgur.com/JcQWXoO.jpg) no-repeat center center',
-    'width': '100%',
-    'minHeight': '700px',
     'backgroundSize': '100%',
+    'minHeight': '400px',
     'color': 'white',
     'display': 'flex',
     'alignItems': 'center'
@@ -24,9 +23,9 @@ const styles = {
 export default class Jumbotron extends Component {
   render() {
     return (
-      <div className="jumbotron" style={styles.background}>
+      <div className="jumbotron col-sm-12 col-md-12 col-lg-12" style={styles.background}>
         <div className="container">
-          <div className="col-sm-6 col-md-4 col-lg-4 text-center" style={styles.name}>
+          <div className="col-sm-12 col-md-4 col-lg-4 text-center" style={styles.name}>
             <div className="row">
               <h1>DANNY LIM</h1>
             </div>

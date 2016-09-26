@@ -25,9 +25,9 @@ const styles = {
 export default class Connect extends Component {
   render() {
     return (
-      <div className="text-center container" style={styles.connectBox} id='connect'>
+      <div className="text-center container col-sm-12 col-md-12 col-lg-12" style={styles.connectBox} id='connect'>
         <form method='post' action='mailto:danny.b.lim@gmail.com'>
-          <h2>CONNECT</h2>
+          <h2 className='col-sm-12 col-md-12 col-lg-12'>CONNECT</h2>
           <RaisedButton
           label="Email"
           primary={true}

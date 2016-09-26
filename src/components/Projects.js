@@ -19,10 +19,10 @@ const styles = {
 export default class Projects extends Component {
   render() {
     return (
-      <div id="projects" className="container text-center" style={styles.background}>
+      <div id="projects" className="container text-center col-sm-12 col-md-12 col-lg-12" style={styles.background}>
         <div className="col-sm-12 col-md-12 col-lg-12 text-center">
           <div className="row">
-            <h2>PROJECTS</h2>
+            <h2 className='col-sm-12 col-md-12 col-lg-12'>PROJECTS</h2>
           </div>
           <div className="row">
             <div className="col-sm-12 col-md-4 col-lg-4">
