@@ -19,41 +19,57 @@ const styles = {
 export default class Projects extends Component {
   render() {
     return (
-      <div id="projects" className="container text-center col-sm-12 col-md-12 col-lg-12" style={styles.background}>
-        <div className="col-sm-12 col-md-12 col-lg-12 text-center">
-          <div className="row">
-            <h2 className='col-sm-12 col-md-12 col-lg-12'>PROJECTS</h2>
+      <div id="projects" className="container text-center" style={styles.background}>
+        <div className="col-sm-12 col-md-12 col-lg-12">
+          <div className="row text-center">
+            <h2>PROJECTS</h2>
           </div>
-          <div className="row">
-            <div className="col-sm-12 col-md-4 col-lg-4">
+          <div className="col-sm-12 col-md-4 col-lg-4">
+            <div className="row">
               <a href='http://newsrant.herokuapp.com/' target='_blank'><Avatar size='50%' src='http://i.imgur.com/ZTaZfd1.png'/></a>
+            </div>
+            <div className="row">
               <a
               href='https://github.com/dalime/NewsRant'
               target='_blank'
               style={styles.links}
               >
               <h3>NewsRant</h3></a>
+            </div>
+            <div className="row">
               <p>A simple app where you can search for news articles, open chatrooms, and talk about them anonymously with other people interested in the same article. Created with React.</p>
             </div>
-            <div className="col-sm-12 col-md-4 col-lg-4">
+          </div>
+          <div className="col-sm-12 col-md-4 col-lg-4">
+            <div className="row">
               <a href='http://iconoquiz.herokuapp.com/' target='_blank'><Avatar size='50%' src='http://i.imgur.com/Iqmd1vb.png'/></a>
+            </div>
+            <div className="row">
               <a
-                href='https://github.com/humanbying/groupProject2'
-                target='_blank'
-                style={styles.links}
+              href='https://github.com/humanbying/groupProject2'
+              target='_blank'
+              style={styles.links}
               >
               <h3>IconoQuiz</h3></a>
+            </div>
+            <div className="row">
               <p>A 2-player game that tests the players' knowledge of fast food restaurant logos. Created with React.</p>
             </div>
-            <div className="col-sm-12 col-md-4 col-lg-4">
+          </div>
+          <div className="col-sm-12 col-md-4 col-lg-4">
+            <div className="row">
               <Avatar size='50%'/>
+            </div>
+            <div className="row">
               <a
-                href='#'
-                target='_blank'
-                style={styles.links}
+              href='#'
+              target='_blank'
+              style={styles.links}
               >
               <h3>Project 3</h3></a>
-              <p>Coming soon</p>
+            </div>
+            <div className="row">
+              <p>In progress.</p>
             </div>
           </div>
         </div>
