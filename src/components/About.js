@@ -10,7 +10,7 @@ const styles = {
     'fontStyle': 'italic'
   },
   skillLogo: {
-    'width': '20%',
+    'width': '25%',
     'marginLeft': '5px',
     'marginRight': '5px'
   }
@@ -22,7 +22,9 @@ export default class App extends Component {
       <div id='about' className='container'>
         <div className="col-sm-12 col-md-12 col-lg-12">
           <div className='row'>
-            <h2 className='text-center'>ABOUT</h2>
+            <div className="col-sm-12 col-md-12 col-lg-12">
+              <h2 className='col-sm-12 col-md-12 col-lg-12 text-center'>ABOUT</h2>
+            </div>
           </div>
           <div className="row">
             <div className="col-sm-12 col-md-4 col-lg-3 text-center">

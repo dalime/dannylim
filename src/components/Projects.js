@@ -33,17 +33,17 @@ export default class Projects extends Component {
               style={styles.links}
               >
               <h3>NewsRant</h3></a>
-              <p>A simple app where you can search for news articles, open chatrooms, and talk about them anonymously with other people interested in the same article.</p>
+              <p>A simple app where you can search for news articles, open chatrooms, and talk about them anonymously with other people interested in the same article. Created with React.</p>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-4">
-              <Avatar size='50%'/>
+              <a href='http://iconoquiz.herokuapp.com/' target='_blank'><Avatar size='50%' src='http://i.imgur.com/Iqmd1vb.png'/></a>
               <a
-                href='#'
+                href='https://github.com/humanbying/groupProject2'
                 target='_blank'
                 style={styles.links}
               >
-              <h3>Project 2</h3></a>
-              <p>Coming soon</p>
+              <h3>IconoQuiz</h3></a>
+              <p>A 2-player game that tests the players' knowledge of fast food restaurant logos. Created with React.</p>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-4">
               <Avatar size='50%'/>
