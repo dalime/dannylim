@@ -54,10 +54,10 @@ export default class App extends Component {
             <h3>EXPERIENCE</h3>
           </div>
           <div className="row">
-            <div className="col-sm-6 col-md-4 col-lg-3 text-center">
+            <div className="col-sm-12 col-md-4 col-lg-3 text-center">
               <Avatar size='30%' src='http://i.imgur.com/SprmAln.png?1' />
             </div>
-            <div className="col-sm-6 col-md-8 col-lg-9">
+            <div className="col-sm-12 col-md-8 col-lg-9">
               <h4 style={styles.companyTitle}>a2z, Inc.</h4>
               <h5 style={styles.positionName}>Software Development Intern (September 2015 - May 2016)</h5>
               <p>a2z offers robust software solutions for trade show management.
@@ -69,10 +69,10 @@ export default class App extends Component {
           </div>
           <br />
           <div className="row">
-            <div className="col-sm-6 col-md-4 col-lg-3 text-center">
+            <div className="col-sm-12 col-md-4 col-lg-3 text-center">
               <Avatar size='30%' src='http://i.imgur.com/Fn7p3Gp.jpg' />
             </div>
-            <div className="col-sm-6 col-md-8 col-lg-9">
+            <div className="col-sm-12 col-md-8 col-lg-9">
               <h4 style={styles.companyTitle}>Deloitte</h4>
               <h5 style={styles.positionName}>Advisory Consultant (September 2014 - September 2015)</h5>
               <p>Deloitte Advisory offers enterprise risk solutions to clients nationwide.
@@ -85,10 +85,10 @@ export default class App extends Component {
             <h3>EDUCATION</h3>
           </div>
           <div className="row">
-            <div className="col-sm-6 col-md-4 col-lg-3 text-center">
+            <div className="col-sm-12 col-md-4 col-lg-3 text-center">
               <Avatar size='30%' src='http://i.imgur.com/1GAgpjG.png'/>
             </div>
-            <div className="col-sm-6 col-md-8 col-lg-9">
+            <div className="col-sm-12 col-md-8 col-lg-9">
               <h4 style={styles.companyTitle}>Free Code Camp</h4>
               <h5 style={styles.positionName}>Fullstack JavaScript Development (May 2016 - Current)</h5>
               <p>After my internship with a2z, I decided to dedicate more time to better my development skillset.
@@ -98,10 +98,10 @@ export default class App extends Component {
           </div>
           <br />
           <div className="row">
-            <div className="col-sm-6 col-md-4 col-lg-3 text-center">
+            <div className="col-sm-12 col-md-4 col-lg-3 text-center">
               <Avatar size='30%' src='http://i.imgur.com/ErkLYCZ.png'/>
             </div>
-            <div className="col-sm-6 col-md-8 col-lg-9">
+            <div className="col-sm-12 col-md-8 col-lg-9">
               <h4 style={styles.companyTitle}>Robert H. Smith School of Business</h4>
               <h5 style={styles.positionName}>Bachelor of Science in Information Systems and Accounting (August 2010 - May 2014)</h5>
               <p>From 2010 to 2014, I spent the first defining years of adulthood at UMD.
