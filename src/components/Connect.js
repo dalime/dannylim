@@ -6,12 +6,6 @@ import FontIcon from 'material-ui/FontIcon';
 import ActionAndroid from 'material-ui/svg-icons/action/android';
 import {fullWhite} from 'material-ui/styles/colors';
 
-import dotenv from 'dotenv';
-dotenv.load();
-
-const helper = require('sendgrid').mail;
-const sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
-
 const styles = {
   connectBox: {
     'backgroundColor': '#e9f0ff',
