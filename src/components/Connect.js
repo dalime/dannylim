@@ -43,7 +43,7 @@ export default class Connect extends Component {
   }
 
   inputChange() {
-    
+
   }
 
   sendMail() {
@@ -55,7 +55,6 @@ export default class Connect extends Component {
       <div className="text-center container col-sm-12 col-md-12 col-lg-12" style={styles.connectBox} id='connect'>
         <form onSubmit={this.sendMail}>
           <h2>CONNECT</h2>
-          // ADD TEXT INPUTS
           <RaisedButton
           label="Email"
           primary={true}
