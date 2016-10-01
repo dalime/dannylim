@@ -38,23 +38,49 @@ export default class Connect extends Component {
       message: ''
     }
 
-    this.inputChange = this.inputChange.bind(this);
+    this._onInputChange = this._onInputChange.bind(this);
     this.sendMail = this.sendMail.bind(this);
   }
 
-  inputChange() {
-
+  _onInputChange(e) {
+    let key = e.target.dataset.statekey;
+    let value = e.target.value;
+    this.setState({
+      [key]: value
+    });
   }
 
   sendMail() {
-
+    console.log ('this.state:', this.state);
   }
 
   render() {
+    let { name, email, message } = this.state;
     return (
       <div className="text-center container col-sm-12 col-md-12 col-lg-12" style={styles.connectBox} id='connect'>
         <form onSubmit={this.sendMail}>
           <h2>CONNECT</h2>
+          <TextField
+            id="text-field-default"
+            onChange={this._onInputChange}
+            data-statekey="name"
+            value={name}
+            floatingLabelText="Name"
+            />
+          <TextField
+            id="text-field-default"
+            onChange={this._onInputChange}
+            data-statekey="email"
+            value={email}
+            floatingLabelText="Email"
+            />
+          <TextField
+            id="text-field-default"
+            onChange={this._onInputChange}
+            data-statekey="message"
+            value={message}
+            floatingLabelText="Message"
+            />
           <RaisedButton
           label="Email"
           primary={true}
