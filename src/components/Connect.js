@@ -6,6 +6,12 @@ import FontIcon from 'material-ui/FontIcon';
 import ActionAndroid from 'material-ui/svg-icons/action/android';
 import {fullWhite} from 'material-ui/styles/colors';
 
+import dotenv from 'dotenv';
+dotenv.load();
+
+const helper = require('sendgrid').mail;
+const sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+
 const styles = {
   connectBox: {
     'backgroundColor': '#e9f0ff',
@@ -23,11 +29,33 @@ const styles = {
 }
 
 export default class Connect extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      name: '',
+      email: '',
+      message: ''
+    }
+
+    this.inputChange = this.inputChange.bind(this);
+    this.sendMail = this.sendMail.bind(this);
+  }
+
+  inputChange() {
+    
+  }
+
+  sendMail() {
+
+  }
+
   render() {
     return (
       <div className="text-center container col-sm-12 col-md-12 col-lg-12" style={styles.connectBox} id='connect'>
-        <form method='post' action='mailto:danny.b.lim@gmail.com'>
+        <form onSubmit={this.sendMail}>
           <h2>CONNECT</h2>
+          // ADD TEXT INPUTS
           <RaisedButton
           label="Email"
           primary={true}
