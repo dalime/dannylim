@@ -27,8 +27,8 @@ export default class Connect extends Component {
     super(props);
 
     this.state = {
-      name: '',
       email: '',
+      subject: '',
       message: ''
     }
 
@@ -45,11 +45,15 @@ export default class Connect extends Component {
   }
 
   sendMail() {
-    console.log ('this.state:', this.state);
+    let { email, subject, message } = this.state;
+    let emailObj = {
+      email, subject, message
+    };
+
   }
 
   render() {
-    let { name, email, message } = this.state;
+    let { email, subject, message } = this.state;
     return (
       <div className="text-center container col-sm-12 col-md-12 col-lg-12" style={styles.connectBox} id='connect'>
         <form onSubmit={this.sendMail}>
@@ -57,16 +61,16 @@ export default class Connect extends Component {
           <TextField
             id="text-field-default"
             onChange={this._onInputChange}
-            data-statekey="name"
-            value={name}
-            floatingLabelText="Name"
+            data-statekey="email"
+            value={email}
+            floatingLabelText="Email"
             />
           <TextField
             id="text-field-default"
             onChange={this._onInputChange}
-            data-statekey="email"
-            value={email}
-            floatingLabelText="Email"
+            data-statekey="subject"
+            value={subject}
+            floatingLabelText="Subject"
             />
           <TextField
             id="text-field-default"

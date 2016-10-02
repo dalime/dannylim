@@ -2,9 +2,9 @@
   "name": "dannylim",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server/app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node server/app.js",
     "postinstall": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

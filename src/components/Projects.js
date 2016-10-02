@@ -24,7 +24,7 @@ export default class Projects extends Component {
           <div className="row text-center">
             <h2>PROJECTS</h2>
           </div>
-          <div className="col-sm-12 col-md-4 col-lg-4">
+          <div className="col-sm-12 col-md-4 col-lg-4" style={styles.project}>
             <div className="row">
               <a href='http://newsrant.herokuapp.com/' target='_blank'><Avatar size='50%' src='http://i.imgur.com/ZTaZfd1.png'/></a>
             </div>
@@ -40,7 +40,7 @@ export default class Projects extends Component {
               <p>A simple app where you can search for news articles, open chatrooms, and talk about them anonymously with other people interested in the same article. Created with React.</p>
             </div>
           </div>
-          <div className="col-sm-12 col-md-4 col-lg-4">
+          <div className="col-sm-12 col-md-4 col-lg-4" style={styles.project}>
             <div className="row">
               <a href='http://iconoquiz.herokuapp.com/' target='_blank'><Avatar size='50%' src='http://i.imgur.com/Iqmd1vb.png'/></a>
             </div>
@@ -56,20 +56,20 @@ export default class Projects extends Component {
               <p>A 2-player game that tests the players' knowledge of fast food restaurant logos. Created with React.</p>
             </div>
           </div>
-          <div className="col-sm-12 col-md-4 col-lg-4">
+          <div className="col-sm-12 col-md-4 col-lg-4" style={styles.project}>
             <div className="row">
-              <Avatar size='50%'/>
+              <a href='http://fluxmessageboard.herokuapp.com' target='_blank'><Avatar src='http://i.imgur.com/9DlWPxb.png' size='50%'/></a>
             </div>
             <div className="row">
               <a
-              href='#'
+              href='https://github.com/dalime/flux-messageboard'
               target='_blank'
               style={styles.links}
               >
-              <h3>Project 3</h3></a>
+              <h3>Flux Message Board</h3></a>
             </div>
             <div className="row">
-              <p>In progress.</p>
+              <p>A simple messageboard where you can create, edit, and delete messages. Created with React.</p>
             </div>
           </div>
         </div>
