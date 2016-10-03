@@ -5,6 +5,7 @@ import FlatButton from 'material-ui/FlatButton';
 import FontIcon from 'material-ui/FontIcon';
 import ActionAndroid from 'material-ui/svg-icons/action/android';
 import {fullWhite} from 'material-ui/styles/colors';
+import UserActions from '../actions/UserActions';
 
 const styles = {
   connectBox: {
@@ -44,12 +45,13 @@ export default class Connect extends Component {
     });
   }
 
-  sendMail() {
+  sendMail(e) {
+    e.preventDefault();
     let { email, subject, message } = this.state;
     let emailObj = {
       email, subject, message
     };
-
+    UserActions.sendEmail(emailObj);
   }
 
   render() {
