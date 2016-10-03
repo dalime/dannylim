@@ -57,43 +57,53 @@ export default class Connect extends Component {
   render() {
     let { email, subject, message } = this.state;
     return (
-      <div className="text-center container col-sm-12 col-md-12 col-lg-12" style={styles.connectBox} id='connect'>
-        <form onSubmit={this.sendMail}>
-          <h2>CONNECT</h2>
-          <TextField
-            id="text-field-default"
-            onChange={this._onInputChange}
-            data-statekey="email"
-            value={email}
-            floatingLabelText="Email"
-            />
-          <TextField
-            id="text-field-default"
-            onChange={this._onInputChange}
-            data-statekey="subject"
-            value={subject}
-            floatingLabelText="Subject"
-            />
-          <TextField
-            id="text-field-default"
-            onChange={this._onInputChange}
-            data-statekey="message"
-            value={message}
-            floatingLabelText="Message"
-            />
-          <RaisedButton
-          label="Email"
-          primary={true}
-          type='submit'
-          />
-        </form>
-        <br />
-        <br />
-        <a href='https://github.com/dalime' target='_blank'><img src='http://i.imgur.com/4JMsggT.png' style={styles.button}/></a>
-        <a href='https://twitter.com/dalime5' target='_blank'><img src='http://i.imgur.com/IpIx4wc.png' style={styles.button}/></a>
-        <a href='https://dalime5.wordpress.com/' target='_blank'><img src='http://i.imgur.com/pZKbnlQ.png' style={styles.button}/></a>
-        <a href='https://www.linkedin.com/in/danny-lim-a4839230' target='_blank'><img src='http://i.imgur.com/0TSfZBT.png' style={styles.button}/></a>
+      <div className="container text-center" style={styles.connectBox} id='connect'>
+        <div className="col-sm-12 col-md-12 col-lg-12">
+          <div className="row">
+            <h2>CONNECT</h2>
+          </div>
+          <div className="row">
+            <a href='https://github.com/dalime' target='_blank'><img src='http://i.imgur.com/4JMsggT.png' style={styles.button}/></a>
+            <a href='https://twitter.com/dalime5' target='_blank'><img src='http://i.imgur.com/IpIx4wc.png' style={styles.button}/></a>
+            <a href='https://dalime5.wordpress.com/' target='_blank'><img src='http://i.imgur.com/pZKbnlQ.png' style={styles.button}/></a>
+            <a href='https://www.linkedin.com/in/danny-lim-a4839230' target='_blank'><img src='http://i.imgur.com/0TSfZBT.png' style={styles.button}/></a>
+          </div>
+        </div>
       </div>
     )
   }
 }
+
+/*
+<form onSubmit={this.sendMail}>
+  <h2>CONNECT</h2>
+  <TextField
+    id="text-field-default"
+    onChange={this._onInputChange}
+    data-statekey="email"
+    value={email}
+    floatingLabelText="Email"
+    />
+  <TextField
+    id="text-field-default"
+    onChange={this._onInputChange}
+    data-statekey="subject"
+    value={subject}
+    floatingLabelText="Subject"
+    />
+  <TextField
+    id="text-field-default"
+    onChange={this._onInputChange}
+    data-statekey="message"
+    value={message}
+    floatingLabelText="Message"
+    />
+  <RaisedButton
+  label="Email"
+  primary={true}
+  type='submit'
+  />
+</form>
+<br />
+<br />
+*/
