@@ -36,6 +36,16 @@ export default class Projects extends Component {
               <p>A simple app where you can search for news articles, open chatrooms, and talk about them anonymously with other people interested in the same article. Created with React.</p>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-4" style={styles.project}>
+              <a href='http://bookshare-app.herokuapp.com' target='_blank'><Avatar src='http://i.imgur.com/IuaKcAr.png' size='50%'/></a>
+              <a
+              href='https://github.com/juancafe4/BookShare-App'
+              target='_blank'
+              style={styles.links}
+              >
+              <h3>BookFinder</h3></a>
+              <p>Similar to eBay, BookFinder is an app to store a library of books that you own, put them up for sale, and buy books from other users. Uses Google API, Sendgrid, and Amazon Web Services. Created in React-Redux.js.</p>
+            </div>
+            <div className="col-sm-12 col-md-4 col-lg-4" style={styles.project}>
               <a href='http://iconoquiz.herokuapp.com/' target='_blank'><Avatar size='50%' src='http://i.imgur.com/Iqmd1vb.png'/></a>
               <a
               href='https://github.com/humanbying/groupProject2'
@@ -44,16 +54,6 @@ export default class Projects extends Component {
               >
               <h3>IconoQuiz</h3></a>
               <p>A 2-player game that tests the players' knowledge of fast food restaurant logos. Created with React.</p>
-            </div>
-            <div className="col-sm-12 col-md-4 col-lg-4" style={styles.project}>
-              <a href='http://fluxmessageboard.herokuapp.com' target='_blank'><Avatar src='http://i.imgur.com/9DlWPxb.png' size='50%'/></a>
-              <a
-              href='https://github.com/dalime/flux-messageboard'
-              target='_blank'
-              style={styles.links}
-              >
-              <h3>Flux Message Board</h3></a>
-              <p>A simple messageboard where you can create, edit, and delete messages. Created with React.</p>
             </div>
           </div>
         </div>
