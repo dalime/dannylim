@@ -2,12 +2,6 @@ import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
 
 const styles = {
-  bar: {
-    'position': 'fixed',
-    'top': 0,
-    'width': '100%',
-    'zIndex': 100
-  },
   headline: {
     'fontSize': 24,
     'paddingTop': 16,
@@ -16,6 +10,14 @@ const styles = {
   },
   slide: {
     'padding': 10,
+  },
+  navbar: {
+    'textAlign': 'center'
+  },
+  nav: {
+    'display': 'inlineBlock',
+    'float': 'none',
+    'textAlign': 'center'
   }
 };
 
@@ -39,18 +41,14 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid col-sm-12 col-md-12 col-lg-12" style={styles.bar}>
-          <Tabs
-            onChange={this.handleChange}
-            value={this.state.slideIndex}
-            role='navigation'
-            >
-            <Tab label='ABOUT' value={0} href='#about' role='tab'/>
-            <Tab label='PROJECTS' value={1} href='#projects' role='tab'/>
-            <Tab label='BLOG' value={2} href='#blog' role='tab'/>
-            <Tab label='CONNECT' value={3} href='#connect' role='tab'/>
-          </Tabs>
+      <nav className="navbar navbar-inverse navbar-fixed-top col-sm-12 col-md-12 col-lg-12">
+        <div className="container-fluid" style={styles.bar}>
+          <ul className="nav navbar-nav" onChange={this.handleChange} value={this.state.slideIndex} role="navigation" style={styles.navbar}>
+            <li><a href="#about" role="tab" style={styles.nav}>ABOUT</a></li>
+            <li><a href="#projects" role="tab" style={styles.nav}>PROJECTS</a></li>
+            <li><a href="#blog" role="tab" style={styles.nav}>BLOG</a></li>
+            <li><a href="#connect" role="tab" style={styles.nav}>CONNECT</a></li>
+          </ul>
         </div>
       </nav>
     );
