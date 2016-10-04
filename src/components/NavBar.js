@@ -39,18 +39,20 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <div style={styles.bar} className='col-sm-12 col-md-12 col-lg-12'>
-        <Tabs
-          onChange={this.handleChange}
-          value={this.state.slideIndex}
-          role='navigation'
-        >
-          <Tab label='ABOUT' value={0} href='#about' role='tab'/>
-          <Tab label='PROJECTS' value={1} href='#projects' role='tab'/>
-          <Tab label='BLOG' value={2} href='#blog' role='tab'/>
-          <Tab label='CONNECT' value={3} href='#connect' role='tab'/>
-        </Tabs>
-      </div>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid col-sm-12 col-md-12 col-lg-12" style={styles.bar}>
+          <Tabs
+            onChange={this.handleChange}
+            value={this.state.slideIndex}
+            role='navigation'
+            >
+            <Tab label='ABOUT' value={0} href='#about' role='tab'/>
+            <Tab label='PROJECTS' value={1} href='#projects' role='tab'/>
+            <Tab label='BLOG' value={2} href='#blog' role='tab'/>
+            <Tab label='CONNECT' value={3} href='#connect' role='tab'/>
+          </Tabs>
+        </div>
+      </nav>
     );
   }
 }
