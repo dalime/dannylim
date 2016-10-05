@@ -5,14 +5,14 @@ import FlatButton from 'material-ui/FlatButton';
 import FontIcon from 'material-ui/FontIcon';
 import ActionAndroid from 'material-ui/svg-icons/action/android';
 import {fullWhite} from 'material-ui/styles/colors';
-import { lightBlue100, lightGreenA100, grey900 } from 'material-ui/styles/colors';
+import { greenA700 } from 'material-ui/styles/colors';
 
 const styles = {
   connectBox: {
     'padding': '20px'
   },
   button: {
-    'color': lightGreenA100,
+    'color': greenA700,
     'margin': '10px'
   }
 }

@@ -11,7 +11,7 @@ const styles = {
 export default class Skills extends Component {
   render() {
     return (
-      <div className="container" id="skills">
+      <div className="container text-center" id="skills">
         <div className="row">
           <h2>SKILLS</h2>
         </div>

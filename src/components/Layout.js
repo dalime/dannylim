@@ -9,13 +9,13 @@ import Projects from './Projects';
 import Blog from './Blog';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import { lightBlue100, lightGreenA100, grey900 } from 'material-ui/styles/colors';
+import { lightBlue50, greenA700, grey900 } from 'material-ui/styles/colors';
 
 const muiTheme = getMuiTheme({
   fontFamily: 'Roboto, sans-serif',
   palette: {
-    primary1Color: lightGreenA100,
-    accentColor: lightBlue100
+    primary1Color: greenA700,
+    accentColor: lightBlue50
   },
   appBar: {
     textColor: grey900
@@ -30,13 +30,9 @@ export default class Layout extends Component {
           <NavBar />
           <Jumbotron />
           <About />
-          <hr />
           <Projects />
-          <hr />
           <Skills />
-          <hr />
           <Blog />
-          <hr />
           <Connect />
         </div>
       </MuiThemeProvider>

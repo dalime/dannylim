@@ -15,8 +15,9 @@ const styles = {
   name: {
     'backgroundColor': 'rgba(0,0,0,0.7)',
     'display': 'inline',
-    'padding': '20px',
-    'borderRadius': '10px'
+    'padding': '30px',
+    'borderRadius': '20px',
+    'marginLeft': '20px'
   }
 }
 

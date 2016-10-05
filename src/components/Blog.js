@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
-import { lightBlue100, lightGreenA100, grey900 } from 'material-ui/styles/colors';
+import { lightBlue50 } from 'material-ui/styles/colors';
 
 const styles = {
   blog: {
     'marginTop': '30px',
     'marginBottom': '30px',
-    'backgroundColor': lightBlue100
+    'backgroundColor': lightBlue50,
+    'padding': '10px'
   },
   iframe: {
     'width': '75%',
