@@ -9,17 +9,15 @@ const styles = {
   positionName: {
     'fontStyle': 'italic'
   },
-  skillLogo: {
-    'width': '25%',
-    'marginLeft': '5px',
-    'marginRight': '5px'
+  background: {
+    'backgroundColor': '#81D4FA'
   }
 }
 
 export default class App extends Component {
   render() {
     return (
-      <div id='about' className='container'>
+      <div id='about' className='container' style={styles.background}>
         <div className="col-sm-12 col-md-12 col-lg-12">
           <div className='row'>
             <div className="col-sm-12 col-md-12 col-lg-12">
@@ -36,18 +34,7 @@ export default class App extends Component {
               My background is in technology risk consulting, where I audited the information systems of my clients, prior to my transition to development.
               I decided to move into app development due to my interest in technology and creating software from scratch.
               Currently, I am building apps with JavaScript, particularly with the MERN Stack (MongoDB, Express.js, React.js, and Node.js).
-              Below are some of the skills in my arsenal to build with.
               </p>
-              <img src='http://i.imgur.com/zQahBhe.png' style={styles.skillLogo}/>
-              <img src='http://i.imgur.com/WBX3dw3.png' style={styles.skillLogo}/>
-              <img src='http://i.imgur.com/gRThS84.png' style={styles.skillLogo}/>
-              <img src='http://i.imgur.com/wIVDKOZ.png' style={styles.skillLogo}/>
-              <img src='http://i.imgur.com/yJ8sJYj.png' style={styles.skillLogo}/>
-              <img src='http://i.imgur.com/8wjJ5N7.png' style={styles.skillLogo}/>
-              <img src='http://i.imgur.com/4o07kcH.png' style={styles.skillLogo}/>
-              <img src='http://i.imgur.com/xwCEZDl.png' style={styles.skillLogo}/>
-              <img src='http://i.imgur.com/7mp4LVQ.png' style={styles.skillLogo}/>
-              <img src='http://i.imgur.com/caHm4zf.png' style={styles.skillLogo}/>
             </div>
           </div>
           <div className="row text-center">

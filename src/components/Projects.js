@@ -42,8 +42,8 @@ export default class Projects extends Component {
               target='_blank'
               style={styles.links}
               >
-              <h3>BookFinder</h3></a>
-              <p>Similar to eBay, BookFinder is an app to store a library of books that you own, put them up for sale, and buy books from other users. Uses Google API, Sendgrid, and Amazon Web Services. Created in React-Redux.</p>
+              <h3>BookShare</h3></a>
+              <p>Similar to eBay, BookShare is an app to store a library of books that you own, put them up for sale, and buy books from other users. Uses Google API, Sendgrid, and Amazon Web Services. Created in React-Redux.</p>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-4" style={styles.project}>
               <a href='http://iconoquiz.herokuapp.com/' target='_blank'><Avatar size='50%' src='http://i.imgur.com/Iqmd1vb.png'/></a>

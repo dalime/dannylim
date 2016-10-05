@@ -1,5 +1,6 @@
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
+import AppBar from 'material-ui/AppBar';
 
 const styles = {
   bar: {
@@ -44,12 +45,21 @@ export default class NavBar extends React.Component {
         value={this.state.slideIndex}
         role='navigation'
         style={styles.bar}
+        className="navigationBar"
       >
         <Tab label='ABOUT' value={0} href='#about' role='tab'/>
-        <Tab label='PROJECTS' value={1} href='#projects' role='tab'/>
-        <Tab label='BLOG' value={2} href='#blog' role='tab'/>
-        <Tab label='CONNECT' value={3} href='#connect' role='tab'/>
+        <Tab label='SKILLS' value={1} href='#skills' role='tab'/>
+        <Tab label='PROJECTS' value={2} href='#projects' role='tab'/>
+        <Tab label='BLOG' value={3} href='#blog' role='tab'/>
+        <Tab label='CONNECT' value={4} href='#connect' role='tab'/>
       </Tabs>
     );
   }
 }
+
+/*
+<AppBar
+  title="Title"
+  iconClassNameRight="muidocs-icon-navigation-expand-more"
+/>
+*/

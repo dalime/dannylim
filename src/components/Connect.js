@@ -13,13 +13,8 @@ const styles = {
     'padding': '20px'
   },
   button: {
-    'margin': 12,
-    'width': '10%'
-  },
-  linkedInButton: {
-    'margin': 12,
-    'width': '10%',
-    'borderRadius': '20px'
+    'color': '#69F0AE',
+    'margin': '10px'
   }
 }
 
@@ -63,10 +58,10 @@ export default class Connect extends Component {
             <h2>CONNECT</h2>
           </div>
           <div className="row">
-            <a href='https://github.com/dalime' target='_blank'><img src='http://i.imgur.com/4JMsggT.png' style={styles.button}/></a>
-            <a href='https://twitter.com/dalime5' target='_blank'><img src='http://i.imgur.com/IpIx4wc.png' style={styles.button}/></a>
-            <a href='https://dalime5.wordpress.com/' target='_blank'><img src='http://i.imgur.com/pZKbnlQ.png' style={styles.button}/></a>
-            <a href='https://www.linkedin.com/in/danny-lim-a4839230' target='_blank'><img src='http://i.imgur.com/0TSfZBT.png' style={styles.button}/></a>
+            <a href='https://github.com/dalime' target='_blank'><i className="fa fa-5x fa-github-square" style={styles.button}></i></a>
+            <a href='https://twitter.com/dalime5' target='_blank'><i className="fa fa-5x fa-twitter-square" style={styles.button}></i></a>
+            <a href='https://dalime5.wordpress.com/' target='_blank'><i className="fa fa-5x fa-wordpress" style={styles.button}></i></a>
+            <a href='https://www.linkedin.com/in/danny-lim-a4839230' target='_blank'><i className="fa fa-5x fa-linkedin-square" style={styles.button}></i></a>
           </div>
         </div>
       </div>
