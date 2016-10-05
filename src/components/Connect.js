@@ -5,15 +5,14 @@ import FlatButton from 'material-ui/FlatButton';
 import FontIcon from 'material-ui/FontIcon';
 import ActionAndroid from 'material-ui/svg-icons/action/android';
 import {fullWhite} from 'material-ui/styles/colors';
-import UserActions from '../actions/UserActions';
+import { lightBlue100, lightGreenA100, grey900 } from 'material-ui/styles/colors';
 
 const styles = {
   connectBox: {
-    'backgroundColor': '#e9f0ff',
     'padding': '20px'
   },
   button: {
-    'color': '#69F0AE',
+    'color': lightGreenA100,
     'margin': '10px'
   }
 }
@@ -68,37 +67,3 @@ export default class Connect extends Component {
     )
   }
 }
-
-/*
-<form onSubmit={this.sendMail}>
-  <h2>CONNECT</h2>
-  <TextField
-    id="text-field-default"
-    onChange={this._onInputChange}
-    data-statekey="email"
-    value={email}
-    floatingLabelText="Email"
-    />
-  <TextField
-    id="text-field-default"
-    onChange={this._onInputChange}
-    data-statekey="subject"
-    value={subject}
-    floatingLabelText="Subject"
-    />
-  <TextField
-    id="text-field-default"
-    onChange={this._onInputChange}
-    data-statekey="message"
-    value={message}
-    floatingLabelText="Message"
-    />
-  <RaisedButton
-  label="Email"
-  primary={true}
-  type='submit'
-  />
-</form>
-<br />
-<br />
-*/

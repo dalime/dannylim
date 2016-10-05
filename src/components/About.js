@@ -8,16 +8,13 @@ const styles = {
   },
   positionName: {
     'fontStyle': 'italic'
-  },
-  background: {
-    'backgroundColor': '#81D4FA'
   }
 }
 
 export default class App extends Component {
   render() {
     return (
-      <div id='about' className='container' style={styles.background}>
+      <div id='about' className='container'>
         <div className="col-sm-12 col-md-12 col-lg-12">
           <div className='row'>
             <div className="col-sm-12 col-md-12 col-lg-12">
@@ -30,10 +27,15 @@ export default class App extends Component {
             </div>
             <div className='col-sm-12 col-md-8 col-lg-9'>
               <p>
-              Born and raised in Maryland between Baltimore and Washington, D.C., I have a strong affinity for professionalism in my work.
-              My background is in technology risk consulting, where I audited the information systems of my clients, prior to my transition to development.
-              I decided to move into app development due to my interest in technology and creating software from scratch.
-              Currently, I am building apps with JavaScript, particularly with the MERN Stack (MongoDB, Express.js, React.js, and Node.js).
+                Born and raised in Maryland between Baltimore and Washington, D.C., I have a strong affinity for professionalism in my work.
+                My background is in technology risk consulting, where I audited the information systems of my clients, prior to my transition to development.
+                I decided to move into app development due to my interest in technology and creating software from scratch.
+                Currently, I am building apps with JavaScript, particularly with the MERN Stack (MongoDB, Express.js, React.js, and Node.js).
+              </p>
+              <p>
+                In my free time, I love to travel and stay active. My hobbies include weight lifting, Brazilian jiu-jitsu, and breakdancing.
+                I believe that staying active physically helps clear the mind and keeps the brain active as well. 
+                I am also a fan of photography and videography.
               </p>
             </div>
           </div>
