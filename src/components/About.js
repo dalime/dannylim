@@ -33,9 +33,10 @@ export default class App extends Component {
                 Currently, I am building apps with JavaScript, particularly with the MERN Stack (MongoDB, Express.js, React.js, and Node.js).
               </p>
               <p>
-                In my free time, I love to travel and stay active. My hobbies include weight lifting, Brazilian jiu-jitsu, and breakdancing.
+                In my free time, I love to travel. My travels have taken me to Southeast Asia, Central Europe, and India.
+                I also like to stay active. My hobbies include weight lifting, Brazilian jiu-jitsu, and breakdancing.
                 I believe that staying active physically helps clear the mind and keeps the brain active as well.
-                I am also a fan of photography and videography.
+                I am also a fan of photography and videography and like to make films on the side.
               </p>
             </div>
           </div>

@@ -20,7 +20,12 @@ const styles = {
   paper: {
     width: '100%',
     margin: '5px',
-    textAlign: 'center'
+    textAlign: 'center',
+    paddingBottom: '10px',
+    paddingTop: '10px'
+  },
+  appGif: {
+    border: '1px solid black'
   }
 }
 
@@ -36,7 +41,7 @@ export default class Projects extends Component {
             <div className="row">
               <div className="col-sm-12 col-md-4 col-lg-4" style={styles.project}>
                 <Paper style={styles.paper} zDepth={4}>
-                  <a href='http://newsrant.herokuapp.com/' target='_blank'><Avatar size='50%' src='http://i.imgur.com/ZTaZfd1.png'/></a>
+                  <a href='http://newsrant.herokuapp.com/' target='_blank'><img width='90%' src='http://i.imgur.com/FHtWxs1.gif' style={styles.appGif} /></a>
                   <a
                   href='https://github.com/dalime/NewsRant'
                   target='_blank'
@@ -48,7 +53,7 @@ export default class Projects extends Component {
               </div>
               <div className="col-sm-12 col-md-4 col-lg-4" style={styles.project}>
                 <Paper style={styles.paper} zDepth={4}>
-                  <a href='http://bookshare-app.herokuapp.com' target='_blank'><Avatar src='http://i.imgur.com/IuaKcAr.png' size='50%'/></a>
+                  <a href='http://bookshare-app.herokuapp.com' target='_blank'><img width='90%' src='http://i.imgur.com/KiJgkkn.gif' style={styles.appGif} /></a>
                   <a
                   href='https://github.com/juancafe4/BookShare-App'
                   target='_blank'
@@ -60,7 +65,7 @@ export default class Projects extends Component {
               </div>
               <div className="col-sm-12 col-md-4 col-lg-4" style={styles.project}>
                 <Paper style={styles.paper} zDepth={4}>
-                  <a href='http://iconoquiz.herokuapp.com/' target='_blank'><Avatar size='50%' src='http://i.imgur.com/Iqmd1vb.png'/></a>
+                  <a href='http://iconoquiz.herokuapp.com/' target='_blank'><img width='90%' src='http://i.imgur.com/kPoiQLS.gif' style={styles.appGif} /></a>
                   <a
                   href='https://github.com/humanbying/groupProject2'
                   target='_blank'

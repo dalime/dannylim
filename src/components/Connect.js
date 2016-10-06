@@ -11,9 +11,6 @@ const styles = {
   connectBox: {
     'padding': '20px'
   },
-  resumeButton: {
-    'backgroundColor': blueA400
-  },
   button: {
     'color': greenA700,
     'margin': '10px'
@@ -61,8 +58,8 @@ export default class Connect extends Component {
           </div>
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-12">
-              <a href="./build/resume.pdf">
-              <RaisedButton style={styles.resumeButton} label="View Resume" />
+              <a href="./build/resume.pdf" target="_blank">
+              <RaisedButton backgroundColor={greenA700} label="View Resume" />
               </a>
             </div>
           </div>
