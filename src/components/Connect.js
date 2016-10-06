@@ -58,7 +58,7 @@ export default class Connect extends Component {
           </div>
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-12">
-              <a href="./build/resume.pdf" target="_blank">
+              <a href="./build/DannyLim_Resume.pdf" target="_blank">
               <RaisedButton backgroundColor={greenA700} label="View Resume" />
               </a>
             </div>
