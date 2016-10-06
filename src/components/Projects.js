@@ -67,7 +67,7 @@ export default class Projects extends Component {
                   style={styles.links}
                   >
                   <h3>IconoQuiz</h3></a>
-                  <p>A 2-player game that tests the players' knowledge of fast food restaurant logos. Created with React.</p>
+                  <p>A 2-player game that tests the players' knowledge of fast food restaurant logos. Each right answer earns you a point and the first player to five points wins! Challenge your friend. Created in React flux flow.</p>
                 </Paper>
               </div>
             </div>

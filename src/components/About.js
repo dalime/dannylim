@@ -23,7 +23,7 @@ export default class App extends Component {
           </div>
           <div className="row">
             <div className="col-sm-12 col-md-4 col-lg-3 text-center">
-              <a href='https://www.linkedin.com/in/danny-lim-a4839230' target='_blank'><Avatar size='100%' src='http://i.imgur.com/azhJy0m.jpg?1'/></a>
+              <a href='https://www.linkedin.com/in/danny-lim-a4839230' target='_blank'><Avatar size='80%' src='http://i.imgur.com/azhJy0m.jpg?1'/></a>
             </div>
             <div className='col-sm-12 col-md-8 col-lg-9'>
               <p>
@@ -34,7 +34,7 @@ export default class App extends Component {
               </p>
               <p>
                 In my free time, I love to travel and stay active. My hobbies include weight lifting, Brazilian jiu-jitsu, and breakdancing.
-                I believe that staying active physically helps clear the mind and keeps the brain active as well. 
+                I believe that staying active physically helps clear the mind and keeps the brain active as well.
                 I am also a fan of photography and videography.
               </p>
             </div>

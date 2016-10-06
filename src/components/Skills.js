@@ -4,7 +4,9 @@ const styles = {
   skillLogo: {
     'width': '100%',
     'marginLeft': '5px',
-    'marginRight': '5px'
+    'marginRight': '5px',
+    'verticalAlign': 'middle',
+    'display': 'inline'
   }
 }
 

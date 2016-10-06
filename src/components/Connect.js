@@ -5,11 +5,14 @@ import FlatButton from 'material-ui/FlatButton';
 import FontIcon from 'material-ui/FontIcon';
 import ActionAndroid from 'material-ui/svg-icons/action/android';
 import {fullWhite} from 'material-ui/styles/colors';
-import { greenA700 } from 'material-ui/styles/colors';
+import { greenA700, blueA400 } from 'material-ui/styles/colors';
 
 const styles = {
   connectBox: {
     'padding': '20px'
+  },
+  resumeButton: {
+    'backgroundColor': blueA400
   },
   button: {
     'color': greenA700,
@@ -55,6 +58,13 @@ export default class Connect extends Component {
         <div className="col-sm-12 col-md-12 col-lg-12">
           <div className="row">
             <h2>CONNECT</h2>
+          </div>
+          <div className="row">
+            <div className="col-sm-12 col-md-12 col-lg-12">
+              <a href="./build/resume.pdf">
+              <RaisedButton style={styles.resumeButton} label="View Resume" />
+              </a>
+            </div>
           </div>
           <div className="row">
             <a href='https://github.com/dalime' target='_blank'><i className="fa fa-5x fa-github-square" style={styles.button}></i></a>
