@@ -53,43 +53,47 @@ export default class Connect extends Component {
     let { email, subject, message } = this.state;
     return (
       <div className={this.state.component} style={styles.layout}>
-        <div className="container text-left" style={{'marginTop': '5%'}}>
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div className="container text-left" style={{'marginTop': '15%'}}>
+          <div className="col-sm-12 col-md-12 col-lg-12">
             <div className="row text-center">
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div className="col-sm-12 col-md-12 col-lg-12">
                 <h2>CONNECT</h2>
               </div>
             </div>
             <div className="row">
-              <br />
-              <br />
-              <br />
+              <div className="col-sm-12 col-md-12 col-lg-12">
+                <br />
+                <br />
+                <br />
+              </div>
             </div>
             <div className="row text-center">
               <div className="col-sm-12 col-md-12 col-lg-12">
                 <a href="./build/DannyLim_Resume.pdf" target="_blank">
-                <button className="btn resumeBtn">
+                <button className="btn resumeBtn" width='100%'>
                   View Resume
                 </button>
                 </a>
               </div>
             </div>
             <div className="row">
-              <br />
-              <br />
+              <div className="col-sm-12 col-md-12 col-lg-12">
+                <br />
+                <br />
+              </div>
             </div>
             <div className="row text-center">
-              <div className="col-xs-6 col-sm-6 col-md-3 -col-lg-3">
-                <a href='https://github.com/dalime' target='_blank'><i className="fa fa-5x fa-github-square connectBtn"></i></a>
+              <div className="col-sm-3 col-md-3 col-lg-3">
+                <a href='https://github.com/dalime' target='_blank'><i className="fa fa-5x fa-github-square connectBtn" width='100%'></i></a>
               </div>
-              <div className="col-xs-6 col-sm-6 col-md-3 -col-lg-3">
-                <a href='https://twitter.com/dalime5' target='_blank'><i className="fa fa-5x fa-twitter-square connectBtn"></i></a>
+              <div className="col-sm-3 col-md-3 col-lg-3">
+                <a href='https://twitter.com/dalime5' target='_blank'><i className="fa fa-5x fa-twitter-square connectBtn" width='100%'></i></a>
               </div>
-              <div className="col-xs-6 col-sm-6 col-md-3 -col-lg-3">
-                <a href='https://dalime5.wordpress.com/' target='_blank'><i className="fa fa-5x fa-wordpress connectBtn"></i></a>
+              <div className="col-sm-3 col-md-3 col-lg-3">
+                <a href='https://dalime5.wordpress.com/' target='_blank'><i className="fa fa-5x fa-wordpress connectBtn" width='100%'></i></a>
               </div>
-              <div className="col-xs-6 col-sm-6 col-md-3 -col-lg-3">
-                <a href='https://www.linkedin.com/in/danny-lim-a4839230' target='_blank'><i className="fa fa-5x fa-linkedin-square connectBtn"></i></a>
+              <div className="col-sm-3 col-md-3 col-lg-3">
+                <a href='https://www.linkedin.com/in/danny-lim-a4839230' target='_blank'><i className="fa fa-5x fa-linkedin-square connectBtn" width='100%'></i></a>
               </div>
             </div>
           </div>

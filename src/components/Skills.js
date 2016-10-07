@@ -22,15 +22,15 @@ export default class Skills extends Component {
   render() {
     return (
       <div className={this.state.component} style={styles.layout}>
-        <div className="container text-center" style={{'marginTop': '5%'}}>
+        <div className="container text-center" style={{'marginTop': '15%'}}>
           <div className="col-sm-12 col-md-12 col-lg-12">
-            <div className="row">
+            <div className="row text-center">
               <div className="col-sm-12 col-md-12 col-lg-12">
                 <h2>SKILLS</h2>
               </div>
             </div>
             <br />
-            <div className="row">
+            <div className="row text-center">
               <div className="col-sm-6 col-md-3 col-lg-3">
                 <img className="skillLogo" src='./build/images/React.png' />
                 <a className="skillLink" href="https://facebook.github.io/react/" target="_blank"><h3>React.js</h3></a>
@@ -49,7 +49,7 @@ export default class Skills extends Component {
               </div>
             </div>
             <br />
-            <div className="row">
+            <div className="row text-center">
               <div className="col-sm-6 col-md-3 col-lg-3">
                 <img className="skillLogo" src='./build/images/JavaScript.png' />
                 <a className="skillLink" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><h3>JavaScript</h3></a>
@@ -68,7 +68,7 @@ export default class Skills extends Component {
               </div>
             </div>
             <br />
-            <div className="row">
+            <div className="row text-center">
               <div className="col-sm-6 col-md-3 col-lg-3">
                 <img className="skillLogo" src='./build/images/Express.png' />
                 <a className="skillLink" href="https://expressjs.com/" target="_blank"><h3>Express.js</h3></a>

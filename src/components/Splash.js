@@ -5,9 +5,8 @@ import path from 'path';
 const styles = {
   div: {
     marginTop: '20%',
-    display: 'inlineBlock',
-    verticalAlign: 'middle',
-    opacity: '0.8'
+    opacity: '0.8',
+    textAlign: 'center'
   }
 }
 
@@ -27,12 +26,8 @@ export default class Jumbotron extends Component {
   render() {
     return (
       <div className={this.state.component}>
-        <div className="col-sm-12 col-md-12 col-lg-12" style={styles.div}>
-          <div className="row text-center">
-            <div className="col-sm-12 col-md-12 col-lg-12">
-              <a href="./build/DannyLim_Resume" target="_blank"><img src="./build/images/Splash.png" className="splashLogo"/></a>
-            </div>
-          </div>
+        <div className="container text-center" style={styles.div}>
+          <a href="./build/DannyLim_Resume.pdf" target="_blank"><img src="./build/images/Splash.png" className="img-responsive splashLogo" /></a>
         </div>
       </div>
     )

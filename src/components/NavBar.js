@@ -38,7 +38,7 @@ export default class NavBar extends Component {
   // };
 
   changeComponent(component) {
-    this.props.changeComponent(component)
+    this.props.changeComponent(component);
   }
 
   render() {

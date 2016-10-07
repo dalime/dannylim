@@ -1,19 +1,15 @@
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 //import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import Layout from './components/Layout';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Connect from './components/Connect';
 
 import './style.css';
 
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
+// import injectTapEventPlugin from 'react-tap-event-plugin';
+// injectTapEventPlugin();
 
-render(
+ReactDOM.render(
   <Layout />, document.getElementById('root')
 );
 

@@ -59,7 +59,7 @@ export default class Layout extends Component {
 
     return (
       <MuiThemeProvider>
-        <div>
+        <div className="container">
           <NavBar changeComponent={this.changeComponent}/>
           {View}
         </div>

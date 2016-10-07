@@ -7,7 +7,7 @@ import Avatar from 'material-ui/Avatar';
 
 const styles = {
   layout: {
-    'marginTop': '5%',
+    'marginTop': '15%',
     'backgroundColor': 'rgba(0, 0, 0, 0.7)',
     'paddingBottom': '20px'
   },

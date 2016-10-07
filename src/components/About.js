@@ -29,17 +29,17 @@ export default class About extends Component {
 
   render() {
     return (
-      <div className={this.state.component} style={{marginTop: '5%'}}>
+      <div className={this.state.component} style={{marginTop: '15%'}}>
         <div className='container text-left' style={styles.layout}>
           <div className="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-            <div className='row'>
+            <div className='row text-center'>
               <div className="col-sm-12 col-md-12 col-lg-12">
-                <h2 className='col-sm-12 col-md-12 col-lg-12 text-center'>ABOUT</h2>
+                <h2>ABOUT</h2>
               </div>
             </div>
             <div className="row">
               <div className="col-sm-12 col-md-4 col-lg-3 text-center">
-                <a href='https://www.linkedin.com/in/danny-lim-a4839230' target='_blank'><Avatar className="avatar" size='80%' src='http://i.imgur.com/azhJy0m.jpg?1'/></a>
+                <a href='http://i.imgur.com/azhJy0m.jpg?1' target='_blank'><Avatar className="avatar" size='80%' src='http://i.imgur.com/azhJy0m.jpg?1'/></a>
               </div>
               <div className='col-sm-12 col-md-8 col-lg-9'>
                 <p>
@@ -57,7 +57,9 @@ export default class About extends Component {
               </div>
             </div>
             <div className="row text-center">
-              <h3>EXPERIENCE</h3>
+              <div className="col-sm-12 col-md-12 col-lg-12">
+                <h3>EXPERIENCE</h3>
+              </div>
             </div>
             <div className="row">
               <div className="col-sm-12 col-md-4 col-lg-3 text-center">
@@ -88,7 +90,9 @@ export default class About extends Component {
               </div>
             </div>
             <div className="row text-center">
-              <h3>EDUCATION</h3>
+              <div className="col-sm-12 col-md-12 col-lg-12">
+                <h3>EDUCATION</h3>
+              </div>
             </div>
             <div className="row">
               <div className="col-sm-12 col-md-4 col-lg-3 text-center">
