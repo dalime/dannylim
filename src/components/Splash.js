@@ -26,7 +26,7 @@ export default class Jumbotron extends Component {
   render() {
     return (
       <div className={this.state.component}>
-        <div className="container text-center" style={styles.div}>
+        <div className="container text-center home" style={styles.div}>
           <a href="./build/DannyLim_Resume.pdf" target="_blank"><img src="./build/images/Splash.png" className="img-responsive splashLogo" /></a>
         </div>
       </div>

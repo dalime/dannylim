@@ -39,6 +39,11 @@ export default class NavBar extends Component {
 
   changeComponent(component) {
     this.props.changeComponent(component);
+
+    let collapse = document.getElementById('collapse');
+    if (collapse.classList.contains('in')) {
+      collapse.classList.remove('in');
+    }
   }
 
   render() {

@@ -1,5 +1,5 @@
 body {
-  background-image: url('http://i.imgur.com/lS0Rpol.jpg');
+  background: url('http://i.imgur.com/lS0Rpol.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7,13 +7,14 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-@keyframes bounce {
-  from {
-    padding-bottom: 0px;
-  }
-  to {
-    padding-bottom: 20px;
-  }
+.splashLogo {
+  margin: auto
+}
+
+.home {
+  width: 65%;
+  height: 100vh;
+  text-align: center;
 }
 
 a {
@@ -33,12 +34,6 @@ a:hover {
   animation-duration: 1s;
   color: #00E676;
   cursor: pointer;
-}
-
-.navbarLink:active {
-  animation-name: bounce;
-  animation-duration: 1s;
-  color: #00E676;
 }
 
 .navbar .navbar-toggle {
@@ -211,23 +206,4 @@ h1, h2, h3, h4, h5 {
     border: 1px solid white;
     box-shadow: 0 0 5px 5px white;
   }
-}
-
-@keyframes enlarge {
-  from {
-    width: 30%;
-  }
-  to {
-    width: 35%;
-  }
-}
-
-.splashLogo {
-  width: 30%;
-}
-
-.splashLogo:hover {
-  animation-name: enlarge;
-  animation-duration: 1s;
-  width: 35%;
 }
