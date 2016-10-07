@@ -1,0 +1,233 @@
+body {
+  background-image: url('http://i.imgur.com/lS0Rpol.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Roboto, sans-serif;
+}
+
+@keyframes bounce {
+  from {
+    padding-bottom: 0px;
+  }
+  to {
+    padding-bottom: 20px;
+  }
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  animation-name: hi;
+  animation-duration: 1s;
+  color: #00E676;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbarLink:hover {
+  animation-name: hi;
+  animation-duration: 1s;
+  color: #00E676;
+  cursor: pointer;
+}
+
+.navbarLink:active {
+  animation-name: bounce;
+  animation-duration: 1s;
+  color: #00E676;
+}
+
+.navbar .navbar-toggle {
+  color: #00E676;
+}
+
+p {
+  color: white;
+}
+
+h1, h2, h3, h4, h5 {
+  color: white;
+}
+
+
+@keyframes flip {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.skillLogo {
+  width: 50%;
+  position: relative;
+}
+
+
+.skillLogo:hover {
+  position: relative;
+  animation-name: flip;
+  animation-duration: 1s;
+}
+
+.skillLogo:active {
+  position: relative;
+  animation-name: flip;
+  animation-duration: 1s;
+}
+
+.projectLink h3 {
+  color: white;
+  text-decoration: none;
+}
+
+.projectLink:hover h3 {
+  animation-name: hi;
+  animation-duration: 1s;
+  color: #00E676;
+  text-decoration: none;
+}
+
+.skillLink h3 {
+  color: white;
+  text-decoration: none;
+}
+
+.skillLink:hover h3 {
+  animation-name: hi;
+  animation-duration: 1s;
+  color: #00E676;
+  text-decoration: none;
+}
+
+.connectBtn {
+  color: white;
+  margin: 20px;
+}
+
+.connectBtn:hover {
+  animation-name: hi;
+  animation-duration: 1s;
+  margin: 20px;
+  color: #00E676;
+}
+
+.componentIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hi {
+  from {
+    color: white;
+  }
+  to {
+    color: #00E676;
+  }
+}
+
+.resumeBtn {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.resumeBtn:hover {
+  animation-name: buttonColor;
+  animation-duration: 1s;
+  background-color: #00E676;
+  color: white;
+  border: 1px solid white;
+}
+
+@keyframes buttonColor {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: #00E676;
+  }
+}
+
+.avatar {
+  border: 1px solid white;
+  box-shadow: 0 0 0px 0px white;
+}
+
+.avatar:hover {
+  border: 4px solid white;
+  box-shadow: 0 0 5px 5px white;
+  animation-name: highlight;
+  animation-duration: 1s;
+}
+
+.paper {
+  width: 100%;
+  margin: 5px;
+  textAlign: center;
+  padding: 20px;
+  backgroundColor: black;
+  color: white;
+  border: 1px solid white;
+  box-shadow: 0 0 0px 0px white;
+}
+
+.paper:hover {
+  box-shadow: 0 0 5px 5px white;
+  animation-name: highlight;
+  animation-duration: 1s;
+}
+
+@keyframes highlight {
+  from {
+    border: 1px solid white;
+    box-shadow: 0 0 0px 0px white;
+  }
+  to {
+    border: 1px solid white;
+    box-shadow: 0 0 5px 5px white;
+  }
+}
+
+@keyframes enlarge {
+  from {
+    width: 30%;
+  }
+  to {
+    width: 35%;
+  }
+}
+
+.splashLogo {
+  width: 30%;
+}
+
+.splashLogo:hover {
+  animation-name: enlarge;
+  animation-duration: 1s;
+  width: 35%;
+}

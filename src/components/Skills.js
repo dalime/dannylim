@@ -1,58 +1,91 @@
 import React, { Component } from 'react';
 
 const styles = {
-  skillLogo: {
-    'width': '90%',
-    'marginLeft': '5px',
-    'marginRight': '5px',
-    'verticalAlign': 'middle',
-    'display': 'inline-block'
+  layout: {
+    'backgroundColor': 'rgba(0, 0, 0, 0.7)'
   }
 }
 
 export default class Skills extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      component: ''
+    }
+  }
+
+  componentWillMount() {
+    this.setState({component: 'componentIn'});
+  }
+
   render() {
     return (
-      <div className="container text-center" id="skills">
-        <div className="row">
-          <h2>SKILLS</h2>
-        </div>
-        <div className="row">
-          <div className="col-sm-6 col-md-4 col-lg-4">
-            <a href="https://facebook.github.io/react/" target="_blank"><img src='http://i.imgur.com/zQahBhe.png' style={styles.skillLogo} /></a>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-4">
-            <a href="http://redux.js.org/" target="_blank"><img src='http://i.imgur.com/WBX3dw3.png' style={styles.skillLogo} /></a>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-4">
-            <a href="https://facebook.github.io/flux/docs/overview.html" target="_blank"><img src='http://i.imgur.com/amyOVGv.png' style={styles.skillLogo} /></a>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-4">
-            <a href="https://www.w3.org/wiki/The_web_standards_model_-_HTML_CSS_and_JavaScript" target="_blank"><img src='http://i.imgur.com/gRThS84.png' style={styles.skillLogo} /></a>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-4">
-            <a href="https://nodejs.org/en/" target="_blank"><img src='http://i.imgur.com/wIVDKOZ.png' style={styles.skillLogo} /></a>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-4">
-            <a href="https://expressjs.com/" target="_blank"><img src='http://i.imgur.com/yJ8sJYj.png' style={styles.skillLogo} /></a>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-4">
-            <a href="https://www.mongodb.com/" target="_blank"><img src='http://i.imgur.com/8wjJ5N7.png' style={styles.skillLogo} /></a>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-4">
-            <a href="https://jquery.com/" target="_blank"><img src='http://i.imgur.com/4o07kcH.png' style={styles.skillLogo} /></a>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-4">
-            <a href="https://www.mysql.com/" target="_blank"><img src='http://i.imgur.com/xwCEZDl.png?2' style={styles.skillLogo} /></a>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-4">
-            <a href="https://webpack.github.io/" target="_blank"><img src='http://i.imgur.com/u8TYI4J.png?1' style={styles.skillLogo} /></a>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-4">
-            <a href="http://getbootstrap.com/" target="_blank"><img src='http://i.imgur.com/7mp4LVQ.png' style={styles.skillLogo} /></a>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-4">
-            <a href="https://www.asp.net/" target="_blank"><img src='http://i.imgur.com/caHm4zf.png' style={styles.skillLogo} /></a>
+      <div className={this.state.component} style={styles.layout}>
+        <div className="container text-center" style={{'marginTop': '5%'}}>
+          <div className="col-sm-12 col-md-12 col-lg-12">
+            <div className="row">
+              <div className="col-sm-12 col-md-12 col-lg-12">
+                <h2>SKILLS</h2>
+              </div>
+            </div>
+            <br />
+            <div className="row">
+              <div className="col-sm-6 col-md-3 col-lg-3">
+                <img className="skillLogo" src='./build/images/React.png' />
+                <a className="skillLink" href="https://facebook.github.io/react/" target="_blank"><h3>React.js</h3></a>
+              </div>
+              <div className="col-sm-6 col-md-3 col-lg-3">
+                <img className="skillLogo" src='./build/images/Redux.png' />
+                <a className="skillLink" href="http://redux.js.org/" target="_blank"><h3>Redux.js</h3></a>
+              </div>
+              <div className="col-sm-6 col-md-3 col-lg-3">
+                <img className="skillLogo" src='./build/images/Flux.png' />
+                <a className="skillLink" href="https://facebook.github.io/flux/docs/overview.html" target="_blank"><h3>Flux</h3></a>
+              </div>
+              <div className="col-sm-6 col-md-3 col-lg-3">
+                <img className="skillLogo" src='./build/images/Node.png' />
+                <a className="skillLink" href="https://nodejs.org/en/" target="_blank"><h3>Node.js</h3></a>
+              </div>
+            </div>
+            <br />
+            <div className="row">
+              <div className="col-sm-6 col-md-3 col-lg-3">
+                <img className="skillLogo" src='./build/images/JavaScript.png' />
+                <a className="skillLink" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><h3>JavaScript</h3></a>
+              </div>
+              <div className="col-sm-6 col-md-3 col-lg-3">
+                <img className="skillLogo" src='./build/images/HTML.png' />
+                <a className="skillLink" href="http://www.w3schools.com/html/html_intro.asp" target="_blank"><h3>HTML</h3></a>
+              </div>
+              <div className="col-sm-6 col-md-3 col-lg-3">
+                <img className="skillLogo" src='./build/images/CSS.png' />
+                <a className="skillLink" href="http://www.w3schools.com/css/css_intro.asp" target="_blank"><h3>CSS</h3></a>
+              </div>
+              <div className="col-sm-6 col-md-3 col-lg-3">
+                <img className="skillLogo" src='./build/images/jQuery.png' />
+                <a className="skillLink" href="https://jquery.com/" target="_blank"><h3>jQuery</h3></a>
+              </div>
+            </div>
+            <br />
+            <div className="row">
+              <div className="col-sm-6 col-md-3 col-lg-3">
+                <img className="skillLogo" src='./build/images/Express.png' />
+                <a className="skillLink" href="https://expressjs.com/" target="_blank"><h3>Express.js</h3></a>
+              </div>
+              <div className="col-sm-6 col-md-3 col-lg-3">
+                <img className="skillLogo" src='./build/images/Mongo.png' />
+                <a className="skillLink" href="https://www.mongodb.com/" target="_blank"><h3>MongoDB</h3></a>
+              </div>
+              <div className="col-sm-6 col-md-3 col-lg-3">
+                <img className="skillLogo" src='./build/images/SQL.png' />
+                <a className="skillLink" href="https://www.mysql.com/" target="_blank"><h3>SQL</h3></a>
+              </div>
+              <div className="col-sm-6 col-md-3 col-lg-3">
+                <img className="skillLogo" src='./build/images/VisualBasic.png' />
+                <a className="skillLink" href="https://www.asp.net/" target="_blank"><h3>Visual Basic</h3></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

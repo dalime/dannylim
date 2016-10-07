@@ -6,7 +6,6 @@ const styles = {
   blog: {
     'marginTop': '30px',
     'marginBottom': '30px',
-    'backgroundColor': lightBlue50,
     'padding': '10px'
   },
   iframe: {
@@ -18,7 +17,7 @@ const styles = {
 export default class Blog extends Component {
   render() {
     return (
-      <div id="blog" style={styles.blog}>
+      <div style={styles.blog}>
         <div className="container text-center">
           <div className="col-sm-12 col-md-12 col-lg-12">
             <div className="row">

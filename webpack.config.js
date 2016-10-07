@@ -2,22 +2,22 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
+  debug: true,
+  devtool: 'cheap-module-eval-source-map',
   entry: [
     'bootstrap-loader',
+    'webpack-dev-server/client?http://localhost:3000',
+    'webpack/hot/only-dev-server',
     './src/index.js'
   ],
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/build/'
   },
   module: {
     loaders: [
-      {
-        test: /\.js$/,
-        loader: 'babel',
-        exclude: ['node_modules'],
-        query: {compact: false}
-      },
+
       {
         test: /\.jsx?$/,
         include: path.join(__dirname, 'src'),
@@ -28,23 +28,23 @@ module.exports = {
       {test: /\.(woff|woff2)$/, loader: 'url?prefix=font/&limit=5000'},
       {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream'},
       {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'},
-      {test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/, loader: 'imports?jQuery=jquery'},
-      { test:/\.json$/, loader: 'json-loader'}
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+            'file?hash=sha512&digest=hex&name=[hash].[ext]',
+            'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
+    	},
+      // Bootstrap 3 jquery requirement
+      { test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/, loader: 'imports?jQuery=jquery' }
     ]
   },
   plugins: [
-      new webpack.DefinePlugin({
-        "process.env": {
-          NODE_ENV: JSON.stringify("production")
-        }
-      }),
-      new webpack.optimize.UglifyJsPlugin({
-        compress: {
-          warnings: false
-        }
-      }),
-      new webpack.ProvidePlugin({
-        "React": "react"
-      })
-    ]
+        new webpack.ProvidePlugin({
+            "React": "react",
+        }),
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoErrorsPlugin(),
+        new webpack.OldWatchingPlugin()
+  ],
 }
