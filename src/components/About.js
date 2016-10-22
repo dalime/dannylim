@@ -4,13 +4,13 @@ import Avatar from 'material-ui/Avatar';
 
 const styles = {
   layout: {
-    'backgroundColor': 'rgba(0, 0, 0, 0.7)'
+    backgroundColor: 'rgba(0, 0, 0, 0.7)'
   },
   companyTitle: {
-    'fontWeight': 'bold'
+    fontWeight: 'bold'
   },
   positionName: {
-    'fontStyle': 'italic'
+    fontStyle: 'italic'
   }
 }
 
@@ -39,7 +39,7 @@ export default class About extends Component {
             </div>
             <div className="row">
               <div className="col-sm-12 col-md-4 col-lg-3 text-center">
-                <a href='http://i.imgur.com/azhJy0m.jpg?1' target='_blank'><Avatar className="avatar" size='80%' src='http://i.imgur.com/azhJy0m.jpg?1'/></a>
+                <a href='http://i.imgur.com/azhJy0m.jpg?1' target='_blank'><Avatar className="avatar" size={200} src='http://i.imgur.com/azhJy0m.jpg?1'/></a>
               </div>
               <div className='col-sm-12 col-md-8 col-lg-9'>
                 <p>
@@ -63,7 +63,7 @@ export default class About extends Component {
             </div>
             <div className="row">
               <div className="col-sm-12 col-md-4 col-lg-3 text-center">
-                <a href='http://www.a2zinc.net/show6/public/enter.aspx' target='_blank'><Avatar className="avatar" size='30%' src='http://i.imgur.com/SprmAln.png?1' /></a>
+                <a href='http://www.a2zinc.net/show6/public/enter.aspx' target='_blank'><Avatar className="avatar" size={80} src='http://i.imgur.com/SprmAln.png?1' /></a>
               </div>
               <div className="col-sm-12 col-md-8 col-lg-9">
                 <h4 style={styles.companyTitle}>a2z, Inc.</h4>
@@ -78,7 +78,7 @@ export default class About extends Component {
             <br />
             <div className="row">
               <div className="col-sm-12 col-md-4 col-lg-3 text-center">
-                <a href='http://www2.deloitte.com/us/en.html' target='_blank'><Avatar className="avatar" size='30%' src='http://i.imgur.com/Fn7p3Gp.jpg' /></a>
+                <a href='http://www2.deloitte.com/us/en.html' target='_blank'><Avatar className="avatar" size={80} src='http://i.imgur.com/Fn7p3Gp.jpg' /></a>
               </div>
               <div className="col-sm-12 col-md-8 col-lg-9">
                 <h4 style={styles.companyTitle}>Deloitte</h4>
@@ -96,7 +96,7 @@ export default class About extends Component {
             </div>
             <div className="row">
               <div className="col-sm-12 col-md-4 col-lg-3 text-center">
-                <a href='http://freecodecamp.com' target='_blank'><Avatar className="avatar" size='30%' src='http://i.imgur.com/1GAgpjG.png'/></a>
+                <a href='http://freecodecamp.com' target='_blank'><Avatar className="avatar" size={80} src='http://i.imgur.com/1GAgpjG.png'/></a>
               </div>
               <div className="col-sm-12 col-md-8 col-lg-9">
                 <h4 style={styles.companyTitle}>Free Code Camp</h4>
@@ -109,7 +109,7 @@ export default class About extends Component {
             <br />
             <div className="row">
               <div className="col-sm-12 col-md-4 col-lg-3 text-center">
-                <a href='http://www.rhsmith.umd.edu/' target='_blank'><Avatar className="avatar" size='30%' src='http://i.imgur.com/ErkLYCZ.png'/></a>
+                <a href='http://www.rhsmith.umd.edu/' target='_blank'><Avatar className="avatar" size={80} src='http://i.imgur.com/ErkLYCZ.png'/></a>
               </div>
               <div className="col-sm-12 col-md-8 col-lg-9">
                 <h4 style={styles.companyTitle}>Robert H. Smith School of Business</h4>

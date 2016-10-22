@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 import Paper from 'material-ui/Paper';
-//import { lightBlue50 } from 'material-ui/styles/colors';
 
 import Avatar from 'material-ui/Avatar';
 
 const styles = {
   layout: {
-    'marginTop': '15%',
-    'backgroundColor': 'rgba(0, 0, 0, 0.7)',
-    'paddingBottom': '20px'
+    marginTop: '15%',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    paddingBottom: '20px'
   },
   avatars: {
-    'pointer': 'cursor'
+    pointer: 'cursor'
   },
   links: {
-    'textDecoration': 'none',
-    'color': '#00E676'
+    textDecoration: 'none',
+    color: '#00E676'
   },
   appGif: {
     border: '1px solid black'

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const styles = {
   layout: {
-    'backgroundColor': 'rgba(0, 0, 0, 0.7)'
+    backgroundColor: 'rgba(0, 0, 0, 0.7)'
   }
 }
 

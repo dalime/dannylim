@@ -1,15 +1,8 @@
 import React, { Component } from 'react';
-// import TextField from 'material-ui/TextField';
-// import RaisedButton from 'material-ui/RaisedButton';
-// import FlatButton from 'material-ui/FlatButton';
-// import FontIcon from 'material-ui/FontIcon';
-// import ActionAndroid from 'material-ui/svg-icons/action/android';
-// import {fullWhite} from 'material-ui/styles/colors';
-// import { greenA700, blueA400 } from 'material-ui/styles/colors';
 
 const styles = {
   layout: {
-    'backgroundColor': 'rgba(0, 0, 0, 0.7)'
+    backgroundColor: 'rgba(0, 0, 0, 0.7)'
   }
 }
 
