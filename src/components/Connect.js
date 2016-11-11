@@ -11,35 +11,13 @@ export default class Connect extends Component {
     super(props);
 
     this.state = {
-      email: '',
-      subject: '',
-      message: '',
       component: ''
     }
-
-    this._onInputChange = this._onInputChange.bind(this);
-    this.sendMail = this.sendMail.bind(this);
   }
 
   componentWillMount() {
+    // ANIMATION ON MOUNT
     this.setState({component: 'componentIn'});
-  }
-
-  _onInputChange(e) {
-    let key = e.target.dataset.statekey;
-    let value = e.target.value;
-    this.setState({
-      [key]: value
-    });
-  }
-
-  sendMail(e) {
-    e.preventDefault();
-    let { email, subject, message } = this.state;
-    let emailObj = {
-      email, subject, message
-    };
-    UserActions.sendEmail(emailObj);
   }
 
   render() {

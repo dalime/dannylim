@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { browserHistory } from 'react-router';
 import Paper from 'material-ui/Paper';
 
 import Avatar from 'material-ui/Avatar';
@@ -32,6 +31,7 @@ export default class Projects extends Component {
   }
 
   componentWillMount() {
+    // ANIMATION ON MOUNT
     this.setState({component: 'componentIn'});
   }
 

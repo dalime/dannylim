@@ -9,8 +9,10 @@ export default class NavBar extends Component {
   }
 
   changeComponent(component) {
+    // WHEN TAB CLICKED BROWSER HISTORY PUSHES TO CLICKED
     this.props.changeComponent(component);
 
+    // TO COLLAPSE NAVBAR AFTER CLICK
     let collapse = document.getElementById('collapse');
     if (collapse.classList.contains('in')) {
       collapse.classList.remove('in');

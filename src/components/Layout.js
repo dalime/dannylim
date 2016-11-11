@@ -16,6 +16,7 @@ export default class Layout extends Component {
   }
 
   changeComponent(name) {
+    // TO CHANGE COMPONENT RENDERED
     browserHistory.push(name);
   }
 

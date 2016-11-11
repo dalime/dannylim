@@ -16,6 +16,7 @@ export default class Skills extends Component {
   }
 
   componentWillMount() {
+    // ANIMATION ON MOUNT
     this.setState({component: 'componentIn'});
   }
 
