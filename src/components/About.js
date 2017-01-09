@@ -46,9 +46,10 @@ export default class About extends Component {
               <div className='col-sm-12 col-md-8 col-lg-9'>
                 <p>
                   Born and raised in Maryland between Baltimore and Washington, D.C., I have a strong affinity for professionalism in my work.
-                  My background is in technology risk consulting, where I audited the information systems of my clients, prior to my transition to development.
-                  I decided to move into app development due to my interest in technology and creating software from scratch.
+                  My background is in technology risk consulting, where I audited the information systems of my clients, prior to devoting time to learn development.
+                  I took some time to move into app development due to my interest in technology and creating software from scratch.
                   Currently, I am building apps with JavaScript, particularly with the MERN Stack (MongoDB, Express.js, React.js, and Node.js).
+                  Professionally, I am looking to consult clients regarding their technology needs.
                 </p>
                 <p>
                   In my free time, I love to travel and have gone on three backpacking trips to Southeast Asia, Central Europe, and India.
