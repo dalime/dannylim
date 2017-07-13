@@ -76,7 +76,7 @@ export default class Skills extends Component {
               </div>
               <div className="col-sm-6 col-md-3 col-lg-3">
                 <img className="skillLogo" src='./build/images/Express.png' />
-                <a className="skillLink" href="https://expressjs.com/" target="_blank"><h3>Express.js</h3></a>
+                <a className="skillLink" href="https://expressjs.com/" target="_blank"><h3>Express</h3></a>
               </div>
               <div className="col-sm-6 col-md-3 col-lg-3">
                 <img className="skillLogo" src='./build/images/Mongo.png' />
