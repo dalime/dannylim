@@ -70,7 +70,7 @@ export default class About extends Component {
               </div>
               <div className="col-sm-12 col-md-8 col-lg-9">
                 <h4 style={styles.companyTitle}>Booz Allen Hamilton</h4>
-                <h5 style={styles.positionName}>Software Development Intern (September 2015 - May 2016)</h5>
+                <h5 style={styles.positionName}>Software Developer (November 2016 - Current)</h5>
                 <p>Booz Allen Hamilton is the largest government contracting firm in the Washington, DC area.
                 I have contribute to R&D projects as part of their Strategic Innovation Group, as well as do work in systems delivery.
                 I am constantly learning new technologies as part of my job and am currnetly learning Big Data tools like the Hadoop ecosystem.
