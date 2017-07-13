@@ -48,12 +48,12 @@ export default class About extends Component {
                   Born and raised in Maryland between Baltimore and Washington, D.C., I have a strong affinity for professionalism in my work.
                   My background is in technology risk consulting, where I audited the information systems of my clients, prior to devoting time to learn development.
                   I took some time to move into app development due to my interest in technology and creating software from scratch.
-                  Currently, I am building apps with JavaScript, particularly with the MERN Stack (MongoDB, Express.js, React.js, and Node.js).
-                  Professionally, I am looking to consult clients regarding their technology needs.
+                  Currently, I am working full-time as a Software Developer, building enterprise applications using the MERN Stack (MongoDB, Express.js, React.js, and Node.js) and other technologies.
+                  Professionally, I look to add value to clients with the latest stacks.
                 </p>
                 <p>
-                  In my free time, I love to travel and have gone on three backpacking trips to Southeast Asia, Central Europe, and India.
-                  I also like to stay active. My hobbies include weight lifting, Brazilian jiu-jitsu, and breakdancing.
+                  In my free time, I love to travel and have gone on four backpacking trips to Southeast Asia, Central Europe, India, and the UK.
+                  I also like to stay active. My hobbies include running, Brazilian jiu-jitsu, and breakdancing.
                   I believe that staying active physically helps clear the mind and keeps the brain functioning clearly.
                   Photography and videography are fascinating outlets as well, and I edit videos on the side.
                 </p>
@@ -62,6 +62,20 @@ export default class About extends Component {
             <div className="row text-center">
               <div className="col-sm-12 col-md-12 col-lg-12">
                 <h3>EXPERIENCE</h3>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-12 col-md-4 col-lg-3 text-center">
+                <a href='https://www.boozallen.com/' target='_blank'><Avatar className="avatar" size={80} src='http://i.imgur.com/zgi7C3A.png' /></a>
+              </div>
+              <div className="col-sm-12 col-md-8 col-lg-9">
+                <h4 style={styles.companyTitle}>Booz Allen Hamilton</h4>
+                <h5 style={styles.positionName}>Software Development Intern (September 2015 - May 2016)</h5>
+                <p>Booz Allen Hamilton is the largest government contracting firm in the Washington, DC area.
+                I have contribute to R&D projects as part of their Strategic Innovation Group, as well as do work in systems delivery.
+                I am constantly learning new technologies as part of my job and am currnetly learning Big Data tools like the Hadoop ecosystem.
+                It is an exciting time to be providing tech solutions for the government.
+                </p>
               </div>
             </div>
             <div className="row">

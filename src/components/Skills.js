@@ -34,23 +34,27 @@ export default class Skills extends Component {
             <div className="row text-center">
               <div className="col-sm-6 col-md-3 col-lg-3">
                 <img className="skillLogo" src='./build/images/React.png' />
-                <a className="skillLink" href="https://facebook.github.io/react/" target="_blank"><h3>React.js</h3></a>
+                <a className="skillLink" href="https://facebook.github.io/react/" target="_blank"><h3>React</h3></a>
+              </div>
+              <div className="col-sm-6 col-md-3 col-lg-3">
+                <img className="skillLogo" src='./build/images/ReactNative.png' />
+                <a className="skillLink" href="https://facebook.github.io/react-native/" target="_blank"><h3>React Native</h3></a>
               </div>
               <div className="col-sm-6 col-md-3 col-lg-3">
                 <img className="skillLogo" src='./build/images/Redux.png' />
-                <a className="skillLink" href="http://redux.js.org/" target="_blank"><h3>Redux.js</h3></a>
+                <a className="skillLink" href="http://redux.js.org/" target="_blank"><h3>Redux</h3></a>
               </div>
               <div className="col-sm-6 col-md-3 col-lg-3">
                 <img className="skillLogo" src='./build/images/Flux.png' />
                 <a className="skillLink" href="https://facebook.github.io/flux/docs/overview.html" target="_blank"><h3>Flux</h3></a>
               </div>
+            </div>
+            <br />
+            <div className="row text-center">
               <div className="col-sm-6 col-md-3 col-lg-3">
                 <img className="skillLogo" src='./build/images/Node.png' />
                 <a className="skillLink" href="https://nodejs.org/en/" target="_blank"><h3>Node.js</h3></a>
               </div>
-            </div>
-            <br />
-            <div className="row text-center">
               <div className="col-sm-6 col-md-3 col-lg-3">
                 <img className="skillLogo" src='./build/images/JavaScript.png' />
                 <a className="skillLink" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><h3>JavaScript</h3></a>
@@ -63,13 +67,13 @@ export default class Skills extends Component {
                 <img className="skillLogo" src='./build/images/CSS.png' />
                 <a className="skillLink" href="http://www.w3schools.com/css/css_intro.asp" target="_blank"><h3>CSS</h3></a>
               </div>
+            </div>
+            <br />
+            <div className="row text-center">
               <div className="col-sm-6 col-md-3 col-lg-3">
                 <img className="skillLogo" src='./build/images/jQuery.png' />
                 <a className="skillLink" href="https://jquery.com/" target="_blank"><h3>jQuery</h3></a>
               </div>
-            </div>
-            <br />
-            <div className="row text-center">
               <div className="col-sm-6 col-md-3 col-lg-3">
                 <img className="skillLogo" src='./build/images/Express.png' />
                 <a className="skillLink" href="https://expressjs.com/" target="_blank"><h3>Express.js</h3></a>
@@ -81,10 +85,6 @@ export default class Skills extends Component {
               <div className="col-sm-6 col-md-3 col-lg-3">
                 <img className="skillLogo" src='./build/images/SQL.png' />
                 <a className="skillLink" href="https://www.mysql.com/" target="_blank"><h3>SQL</h3></a>
-              </div>
-              <div className="col-sm-6 col-md-3 col-lg-3">
-                <img className="skillLogo" src='./build/images/VisualBasic.png' />
-                <a className="skillLink" href="https://www.asp.net/" target="_blank"><h3>Visual Basic</h3></a>
               </div>
             </div>
           </div>
