@@ -1,6 +1,6 @@
 # dannylim
 
-The code behind my personal [website](http://dannylim.info).
+The code behind my personal [website](http://dannylim.co).
 
 Created in React.js
 
