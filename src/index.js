@@ -7,6 +7,7 @@ import Splash from './components/Splash';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Blog from './components/Blog';
 import Connect from './components/Connect';
 
 import './style.css';
@@ -18,6 +19,7 @@ ReactDOM.render(
       <Route path='about' component={About} />
       <Route path='skills' component={Skills} />
       <Route path='projects' component={Projects} />
+      <Route path='blog' component={Blog} />
       <Route path='connect' component={Connect} />
     </Route>
   </Router>

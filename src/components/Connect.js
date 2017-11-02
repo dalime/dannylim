@@ -58,9 +58,6 @@ export default class Connect extends Component {
                 <a href='https://github.com/dalime' target='_blank'><i className="fa fa-5x fa-github-square connectBtn" width='100%'></i></a>
               </div>
               <div className="col-sm-3 col-md-3 col-lg-3">
-                <a href='https://twitter.com/dalime5' target='_blank'><i className="fa fa-5x fa-twitter-square connectBtn" width='100%'></i></a>
-              </div>
-              <div className="col-sm-3 col-md-3 col-lg-3">
                 <a href='https://dalime5.wordpress.com/' target='_blank'><i className="fa fa-5x fa-wordpress connectBtn" width='100%'></i></a>
               </div>
               <div className="col-sm-3 col-md-3 col-lg-3">

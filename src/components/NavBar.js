@@ -29,6 +29,7 @@ export default class NavBar extends Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
             </button>
             <a className="navbar-brand navbarLink" onClick={this.changeComponent.bind(null, '')}>Danny Lim</a>
           </div>
@@ -37,6 +38,7 @@ export default class NavBar extends Component {
               <li onClick={this.changeComponent.bind(null, 'about')}><a className="navbarLink">About</a></li>
               <li onClick={this.changeComponent.bind(null, 'skills')}><a className="navbarLink">Skills</a></li>
               <li onClick={this.changeComponent.bind(null, 'projects')}><a className="navbarLink">Projects</a></li>
+              <li onClick={this.changeComponent.bind(null, 'blog')}><a className="navbarLink">Blog</a></li>
               <li onClick={this.changeComponent.bind(null, 'connect')}><a className="navbarLink">Connect</a></li>
             </ul>
           </div>
