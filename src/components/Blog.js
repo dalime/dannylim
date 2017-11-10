@@ -8,7 +8,7 @@ export default class Blog extends Component {
       component: ''
     }
   }
-  
+
   componentWillMount() {
     // ANIMATION ON MOUNT
     this.setState({component: 'componentIn'});
@@ -16,23 +16,17 @@ export default class Blog extends Component {
 
   render() {
     return (
-      <div className={this.state.component} style={styles.layout}>
-        <div className="container text-left" style={{'marginTop': '15%'}}>
+      <div className={this.state.component}>
+        <div className="container text-left" style={{marginTop: '15%', textAlign: 'left'}}>
           <div className="col-sm-12 col-md-12 col-lg-12">
-            <div className="row text-center">
-              <div className="col-sm-12 col-md-12 col-lg-12">
-                <h2>BLOG</h2>
-              </div>
-            </div>
             <div className="row">
               <div className="col-sm-12 col-md-12 col-lg-12">
-                <br />
-                <br />
-                <br />
+                <iframe
+                  style={{position: 'absolute', top: "0px", height: "100vh", width: "100%"}}
+                  src="http://dalime5.wordpress.com/"
+                  >
+                </iframe>
               </div>
-            </div>
-            <div className="row text-center">
-              <iframe src="http://dalime5.wordpress.com/"></iframe>
             </div>
           </div>
         </div>

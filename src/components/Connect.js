@@ -54,13 +54,13 @@ export default class Connect extends Component {
               </div>
             </div>
             <div className="row text-center">
-              <div className="col-sm-3 col-md-3 col-lg-3">
+              <div className="col-sm-4 col-md-4 col-lg-4">
                 <a href='https://github.com/dalime' target='_blank'><i className="fa fa-5x fa-github-square connectBtn" width='100%'></i></a>
               </div>
-              <div className="col-sm-3 col-md-3 col-lg-3">
+              <div className="col-sm-4 col-md-4 col-lg-4">
                 <a href='https://dalime5.wordpress.com/' target='_blank'><i className="fa fa-5x fa-wordpress connectBtn" width='100%'></i></a>
               </div>
-              <div className="col-sm-3 col-md-3 col-lg-3">
+              <div className="col-sm-4 col-md-4 col-lg-4">
                 <a href='https://www.linkedin.com/in/danny-lim-a4839230' target='_blank'><i className="fa fa-5x fa-linkedin-square connectBtn" width='100%'></i></a>
               </div>
             </div>
